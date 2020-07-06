@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nova</title>
+    <head>
+      <!-- Required meta tags -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+      <!-- include only the Firebase features as you need -->
+      <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+      <!-- initialize the SDK after all desired features are loaded -->
+      <script defer src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+    <div id="message">
+      <div class="wrapper nova-holder">
+        <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> For Patients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">For Providers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">For Clinics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign up for free</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="hero-video">
+	          <div class="stage-backgoundvideo w-background-video w-background-video-atom">
+	            <video autoplay="" loop="" style="background-image:url(&quot;https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-poster-00001.jpg&quot;)" muted="" playsinline=""  data-object-fit="cover">
+	              <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.mp4" data-wf-ignore="true">
+	              <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.webm" data-wf-ignore="true">
+	            </video>
+	          </div>
+	          <div class="hero-text-overlay"></div>
+	        </div>
+          <div class="hero-text">
+            <div class="master-container-stage">
+            	<div class="stage-heading-wrapper d-flex">
+	              <h1>Be there for your patients, no matter what</h1>
+	              <h6>Easy communication, seamless telemedicine, and workflow efficiency – all in one place</h6>
+	              <a href="" class="btn btn-primary">Free Demo</a>
+	              <a href="" class="btn btn-primary-outline"> Watch Testimonial</a>
+	            </div>
+            </div>
+          </div>
+          <a href="#product" class="arrow-wrapper w-inline-block">
+          	<h5 class="arrow-text">Read more</h5>
+          	<div class="arrow-down">
+          		<div class="stage-arrow-2">↓</div>
+          		<div class="stage-arrow-1">↓</div>
+          	</div>
+          </a>
+        </div>
+
+       <!--  <div class="product-devices-wrapper home">
+				  <div class="master-container devices" style="will-change: opacity; opacity: 1;">
+				    <div class="product-devices-heading devices">
+				      <h2 class="white">Klara’s end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
+				    </div>
+				  </div>
+				  <div class="porduct-devices-image-wrapper">
+				  	<img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room.png" alt="Product Shot" srcset="https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room-p-500.png 500w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room-p-800.png 800w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room-p-1080.png 1080w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room.png 1200w" sizes="(max-width: 767px) 60px, (max-width: 991px) 100vw, (max-width: 2264px) 53vw, 1200px" class="product-img"></div>
+				</div>
+				<div class="webinar-series home">
+				  <div data-w-id="16fe80e3-e844-52b0-bfeb-959e6dc57bda" style="opacity: 1;" class="master-container">
+				    <div class="webinar-series-wrapper">
+				      <img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed1133e67f0baf3d81e3a63_Virtual-Practice.svg" alt="">
+				      <div class="webinar-series-content">
+				        <h5 class="ws-h5">Webinar Series</h5>
+				        <h2 class="ws-h2">The virtual extension of your medical practice June 11 – July 30</h2>
+				        <h4 class="ws-h4">As your office sees more and more patients in person, you’ll need to create plans to maintain and grow the virtual side of your practice (and this is not just about video visits!). We’re here to help with live webinars on how to develop your practice strategy for long-term success.</h4>
+				        <a href="/webinars" class="primary-button w-button">See all webinars</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div id="telemedicine" class="telemedicine">
+				  <div class="master-container">
+				    <div class="multichannel-telemedicine-wrapper home">
+				      <div class="multichannel-telemedicine-content">
+				        <h2 class="h-telemedicine">Powerful, multichannel telemedicine. All in one place.</h2>
+				        <p class="p-patients-texting">Conduct real-time video visits with up to 4 participants. No download, no login.</p>
+				        <p class="p-patients-texting">Billable e-visits and remote monitoring via asynchronous messaging and photos.</p>
+				        <a href="/telemedicine" class="primary-button w-button">Learn More</a>
+				      </div>
+				      <div class="multichannel-telemedicine-img-wrapper"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e74c7d5a58f0f986d2e9afb_Telemedicine-Conversation.png" alt="" class="_2-phones-1"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e73a4200a912bf73e339969_Videocall.jpg" alt="" class="_2-phones-2"></div>
+				    </div>
+				    <div id="texting" class="patients-texting">
+				      <div class="pt-img-wrapper"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger.jpg" srcset="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-500.jpeg 500w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-800.jpeg 800w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-1080.jpeg 1080w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-1600.jpeg 1600w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger.jpg 1640w" sizes="100vw" alt=""></div>
+				      <div class="patients-texting-content">
+				        <h2 class="h-telemedicine">Give patients easy access to your practice</h2>
+				        <p class="p-patients-texting">A textable number, a “press-1-to-text” phone greeting, or our visual voicemail help you to convert phone calls to convenient texting.</p>
+				        <p class="p-patients-texting">And our website messenger turns eyeballs on your website into new visits. </p>
+				        <a href="/messaging" class="primary-button w-button">Learn More</a>
+				      </div>
+				    </div>
+				  </div>
+				</div> -->
+
+				<!-- <div class="footer">
+				  <div class="master-container">
+				    <div class="footer-container">
+				      <a href="#Stage" id="w-node-894da0885c4a-a0885c47" class="footer-logo-wrapper w-inline-block"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5dbafac3285ec2c0c056f4d0_Logo-Rose200.svg" height="30" alt="" class="footer-logo"></a>
+				      <div class="footer-link-list-wrapper"><a href="/telemedicine" class="footer-link">Telemedicine</a><a href="/messaging" class="footer-link">Messaging</a><a href="/assistant" class="footer-link">Assistant</a><a href="/success-stories" class="footer-link">Success Stories</a><a href="/webinars" class="footer-link">Webinars</a><a href="/blog" class="footer-link">Blog</a></div>
+				      <div id="w-node-894da0885c51-a0885c47" class="footer-icons-wrapper"><a href="https://www.facebook.com/getklara" target="_blank" class="icon-button footer">🕮</a><a href="https://twitter.com/getklara" target="_blank" class="icon-button footer">🐦</a><a href="https://www.linkedin.com/company/getklara" target="_blank" class="icon-button footer">👷</a></div>
+				      <div id="w-node-894da0885c58-a0885c47" class="footer-copyright">© Klara Technologies, Inc. 2020</div>
+				    </div>
+				  </div>
+				</div> -->
+
+      </div>
+
+    </div>
+    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      	try {
+      		let app = firebase.app();
+      		let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+      		document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      	} catch (e) {
+      		console.error(e);
+      		document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      	}
+      });
+    </script>
+  </body>
+</html>
