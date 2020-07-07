@@ -1,0 +1,28 @@
+.btn {
+	padding: 8px 20px;
+	border-radius: 50px;
+	font-size: 20px;
+}
+
+.btn-primary {
+    margin-right: 24px;
+    border-style: none;
+    border-width: 0px;
+    border-color: $primary;
+    border-radius: 100px;
+    background-color: $primary;
+    -webkit-transition: background-color 300ms cubic-bezier(.789, .159, .25, 1);
+    transition: background-color 300ms cubic-bezier(.789, .159, .25, 1);
+    color: #fff;
+    font-size: 20px;
+  }
+  
+.btn-outline-button {
+	border:solid 2px $primary;
+	color: $primary;
+	&:hover, &:focus{
+		background:$primary;
+		color: #fff;
+		border-color: $primary
+	}
+}

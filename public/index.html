@@ -11,54 +11,54 @@
       <link rel="stylesheet" href="assets/css/main.css" />
       <!-- update the version number as needed -->
       <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
-      <!-- include only the Firebase features as you need -->
       <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
       <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
       <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
       <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
-      <!-- initialize the SDK after all desired features are loaded -->
       <script defer src="/__/firebase/init.js"></script>
   </head>
   <body>
     <div id="message">
       <div class="wrapper nova-holder">
-        <div class="container-fluid p-0">
+        <div class="nova-holder">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav navbar-nav ml-lg-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> For Patients</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">For Providers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">For Clinics</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sign In</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sign up for free</a>
-                </li>
-              </ul>
-            </div>
+          	<div class="container-fluid">
+	            <a class="navbar-brand" href="#">Logo</a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarNav">
+	              <ul class="navbar-nav navbar-nav ml-lg-auto">
+	                <li class="nav-item active">
+	                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#"> For Patients</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#">For Providers</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">For Clinics</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#">Pricing</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link btn btn-outline-button px-4" href="#">Sign In</a>
+	                </li>
+	                <!-- <li class="nav-item">
+	                  <a class="nav-link" href="#">Sign up for free</a>
+	                </li> -->
+	              </ul>
+	            </div>
+	           </div>
           </nav>
           <div class="hero-video">
 	          <div class="stage-backgoundvideo w-background-video w-background-video-atom">
-	            <video autoplay="" loop="" style="background-image:url(&quot;https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-poster-00001.jpg&quot;)" muted="" playsinline=""  data-object-fit="cover">
-	              <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.mp4" data-wf-ignore="true">
-	              <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.webm" data-wf-ignore="true">
+	            <video autoplay="" loop="" style="background-image:url()" muted="" playsinline=""  data-object-fit="cover">
+	              <source src="assets/images/banner-video.mp4">
+	              <!-- <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.webm"> -->
 	            </video>
 	          </div>
 	          <div class="hero-text-overlay"></div>
@@ -68,12 +68,14 @@
             	<div class="stage-heading-wrapper d-flex">
 	              <h1>Be there for your patients, no matter what</h1>
 	              <h6>Easy communication, seamless telemedicine, and workflow efficiency – all in one place</h6>
-	              <a href="" class="btn btn-primary">Free Demo</a>
-	              <a href="" class="btn btn-primary-outline"> Watch Testimonial</a>
+	              <div class="d-flex">
+	              	<a href="" class="btn btn-primary">Free Demo</a>
+	              	<a href="" class="btn btn-outline-button"> Watch Testimonial</a>
+	              </div>
 	            </div>
             </div>
           </div>
-          <a href="#product" class="arrow-wrapper w-inline-block">
+          <a href="#product" class="arrow-wrapper w-100 d-inline-block">
           	<h5 class="arrow-text">Read more</h5>
           	<div class="arrow-down">
           		<div class="stage-arrow-2">↓</div>
@@ -82,28 +84,34 @@
           </a>
         </div>
 
-       <!--  <div class="product-devices-wrapper home">
-				  <div class="master-container devices" style="will-change: opacity; opacity: 1;">
-				    <div class="product-devices-heading devices">
-				      <h2 class="white">Klara’s end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
-				    </div>
-				  </div>
-				  <div class="porduct-devices-image-wrapper">
-				  	<img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room.png" alt="Product Shot" srcset="https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room-p-500.png 500w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room-p-800.png 800w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room-p-1080.png 1080w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed6429c8a66af3fd4d95cfe_Waiting-Room.png 1200w" sizes="(max-width: 767px) 60px, (max-width: 991px) 100vw, (max-width: 2264px) 53vw, 1200px" class="product-img"></div>
+        <div class="product">
+        	<div id="product" class="anker"></div>
+        	<div class="product-bg"></div>
+					<div class="product-devices-wrapper home">
+					  <div class="master-container devices">
+					    <div class="product-devices-heading devices">
+					      <h2 class="text-white">Klara’s end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
+					    </div>
+					  </div>
+					  <div class="porduct-devices-image-wrapper">
+					  	<img src="assets/images/product.png" class="product-img"></div>
+					</div>
+					</div>
 				</div>
 				<div class="webinar-series home">
 				  <div data-w-id="16fe80e3-e844-52b0-bfeb-959e6dc57bda" style="opacity: 1;" class="master-container">
 				    <div class="webinar-series-wrapper">
-				      <img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5ed1133e67f0baf3d81e3a63_Virtual-Practice.svg" alt="">
+				      <img src="assets/images/webinar-service.svg" alt="" class="img-fluid d-inline-block">
 				      <div class="webinar-series-content">
 				        <h5 class="ws-h5">Webinar Series</h5>
 				        <h2 class="ws-h2">The virtual extension of your medical practice June 11 – July 30</h2>
-				        <h4 class="ws-h4">As your office sees more and more patients in person, you’ll need to create plans to maintain and grow the virtual side of your practice (and this is not just about video visits!). We’re here to help with live webinars on how to develop your practice strategy for long-term success.</h4>
-				        <a href="/webinars" class="primary-button w-button">See all webinars</a>
+				        <h4 class="mb-5">As your office sees more and more patients in person, you’ll need to create plans to maintain and grow the virtual side of your practice (and this is not just about video visits!). We’re here to help with live webinars on how to develop your practice strategy for long-term success.</h4>
+				        <a href="/webinars" class="btn btn-primary">See all webinars</a>
 				      </div>
 				    </div>
 				  </div>
 				</div>
+				
 				<div id="telemedicine" class="telemedicine">
 				  <div class="master-container">
 				    <div class="multichannel-telemedicine-wrapper home">
@@ -111,21 +119,26 @@
 				        <h2 class="h-telemedicine">Powerful, multichannel telemedicine. All in one place.</h2>
 				        <p class="p-patients-texting">Conduct real-time video visits with up to 4 participants. No download, no login.</p>
 				        <p class="p-patients-texting">Billable e-visits and remote monitoring via asynchronous messaging and photos.</p>
-				        <a href="/telemedicine" class="primary-button w-button">Learn More</a>
+				        <a href="/telemedicine" class="btn btn-primary">Learn More</a>
 				      </div>
-				      <div class="multichannel-telemedicine-img-wrapper"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e74c7d5a58f0f986d2e9afb_Telemedicine-Conversation.png" alt="" class="_2-phones-1"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e73a4200a912bf73e339969_Videocall.jpg" alt="" class="_2-phones-2"></div>
+				      <div class="multichannel-telemedicine-img-wrapper">
+				      	<img src="assets/images/Telemedicine-Conversation.png" alt="" class="_2-phones-1">
+				      	<img src="assets/images/Videocall.jpg" alt="" class="_2-phones-2">
+				      </div>
 				    </div>
 				    <div id="texting" class="patients-texting">
-				      <div class="pt-img-wrapper"><img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger.jpg" srcset="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-500.jpeg 500w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-800.jpeg 800w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-1080.jpeg 1080w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-1600.jpeg 1600w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger.jpg 1640w" sizes="100vw" alt=""></div>
+				      <div class="pt-img-wrapper">
+				      		<img class="img-fluid" src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger.jpg" srcset="https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-500.jpeg 500w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-800.jpeg 800w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-1080.jpeg 1080w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger-p-1600.jpeg 1600w, https://assets.website-files.com/5dbafac3285ec25ba456f473/5e72034ff21ba5661714eac2_Webmessenger.jpg 1640w" sizes="100vw" alt="">
+				      	</div>
 				      <div class="patients-texting-content">
 				        <h2 class="h-telemedicine">Give patients easy access to your practice</h2>
 				        <p class="p-patients-texting">A textable number, a “press-1-to-text” phone greeting, or our visual voicemail help you to convert phone calls to convenient texting.</p>
 				        <p class="p-patients-texting">And our website messenger turns eyeballs on your website into new visits. </p>
-				        <a href="/messaging" class="primary-button w-button">Learn More</a>
+				        <a href="/messaging" class="btn btn-primary">Learn More</a>
 				      </div>
 				    </div>
 				  </div>
-				</div> -->
+				</div> 
 
 				<!-- <div class="footer">
 				  <div class="master-container">

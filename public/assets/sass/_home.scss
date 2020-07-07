@@ -1,0 +1,387 @@
+.w-background-video>video {
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.hero-video {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.w-background-video {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  color: white;
+}
+
+.stage-backgoundvideo {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text-overlay {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2;
+  display: block;
+  background-image: linear-gradient(45deg, rgba(146, 104, 104, 0.5), hsla(0, 0%, 100%, 0));
+}
+
+.hero-text {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.master-container-stage {
+  position: relative;
+  bottom: 100px;
+  z-index: 0;
+  width: 100%;
+  max-width: 1280px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-items: center;
+  align-self: flex-end;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.stage-heading-wrapper {
+  max-width: 560px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  h1 {
+    margin-bottom: 40px;
+    border: 1px none #fff;
+    color: #fff;
+    font-size: 56px;
+    line-height: 64px;
+  }
+  h6 {
+    max-width: 400px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+  }
+}
+.arrow-wrapper {
+	position: absolute;
+	top: auto;
+	bottom: 0%;
+	width: 100px;
+	z-index: 5;
+	&:hover {
+		text-decoration:none;
+	}
+}
+.arrow-text {
+  position: relative;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  margin-right: auto;
+  margin-bottom: 4px;
+  margin-left: auto;
+  color: #fff;
+  text-align: center;
+}
+
+.arrow-down {
+    position: relative;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    z-index: 2;
+    overflow: hidden;
+    width: 60px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 32px;
+    justify-content: center;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    font-family: Klara-Icons-Filled;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.stage-arrow-2 {
+    position: absolute;
+    left: 0%;
+    top: -25px;
+    right: 0%;
+    bottom: auto;
+    font-family: 'Klaraicons filled', sans-serif;
+}
+
+.product-devices-wrapper {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    overflow: visible;
+    width: 100%;
+    height: 200vh;
+    margin-top: -100vh;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $primary;
+}
+.master-container {
+	position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-items: center;
+    flex: 1;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+.product-devices-heading {
+	    max-width: 500px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    &.devise {
+    	max-width: 40%;
+    }
+}
+.porduct-devices-image-wrapper {
+	  position: absolute;
+    left: 40%;
+    top: 0px;
+    right: 0%;
+    bottom: 0px;
+    display: flex;
+    max-width: 1200px;
+    margin-top: 64px;
+    margin-right: 40px;
+    margin-left: 40px;
+    align-items: center;
+}
+.product-img {
+	width: 100%;
+}
+.product-devices-heading {
+	max-width: 500px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+	&.devices{
+		max-width: 40%;
+	}
+}
+.webinar-series.home {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+}
+.webinar-series-wrapper {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	@media(min-width: 767px) {
+	display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+   }
+}
+.webinar-series-content {
+    margin-top: 64px;
+}
+.telemedicine {
+	    position: relative;
+    margin-bottom: 150px;
+    padding-top: 160px;
+}
+.multichannel-telemedicine-content {
+	width: 100%;
+	@media (min-width: 768px) {
+	    width: 50%;
+    margin-right: 0px;
+    padding-right: 139px;
+   }
+}
+.h-telemedicine {
+    max-width: 488px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.multichannel-telemedicine-wrapper {
+	@media (min-width: 768px) {
+		display: flex;
+	}
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: flex-start;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    -ms-grid-columns: 1.75fr 1.25fr;
+    grid-template-columns: 1.75fr 1.25fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+.multichannel-telemedicine-img-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding-right: 40px;
+	@media (min-width:768px ) {
+		width: 50%;
+		 display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: flex-start;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+	}
+   
+    img {
+    	display: inline-block;
+    }
+}
+._2-phones-1 {
+    width: 48%;
+    margin-right: 2%;
+}
+._2-phones-2 {
+    width: 48%;
+}
+.p-patients-texting {
+	    max-width: 488px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    font-size: 24px;
+    line-height: 32px;
+}
+.patients-texting {
+	display: flex;
+    margin-bottom: 80px;
+    padding-top: 150px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.pt-img-wrapper {
+	    position: relative;
+    left: 0px;
+    right: 42%;
+    display: block;
+    width: 50%;
+    max-width: 950px;
+    margin-top: 10px;
+    margin-right: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+}
