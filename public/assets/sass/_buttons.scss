@@ -1,5 +1,5 @@
 .btn {
-	padding: 8px 20px;
+	padding: 8px 22px;
 	border-radius: 50px;
 	font-size: 20px;
 }
@@ -16,7 +16,7 @@
     color: #fff;
     font-size: 20px;
   }
-  
+
 .btn-outline-button {
 	border:solid 2px $primary;
 	color: $primary;
@@ -25,4 +25,9 @@
 		color: #fff;
 		border-color: $primary
 	}
+}
+
+.btn-white {
+	background: #fff;
+	color: $primary;
 }

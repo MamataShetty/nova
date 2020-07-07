@@ -4,6 +4,7 @@
 @import "./buttons";
 @import "./header";
 @import "./home";
+@import "./animation";
 
 @font-face {
 	font-family: 'Sofia Pro';
@@ -28,11 +29,26 @@ h2 {
     margin-top: 0px;
     margin-bottom: 40px;
     font-family: sofia-pro, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 48px;
     font-weight: 400;
+    @media (min-width: 767px) {
+    	font-size: 40px;
+    }
 }
 
+h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: sofia-pro, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    @media (min-width: 767px) {
+    	font-size: 28px;
+    line-height: 36px;
+    }
+}
 .container-fluid {
 	max-width: 1280px;
 }
+

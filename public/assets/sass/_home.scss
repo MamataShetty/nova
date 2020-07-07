@@ -107,16 +107,18 @@
     color: #fff;
   }
 }
+
 .arrow-wrapper {
-	position: absolute;
-	top: auto;
-	bottom: 0%;
-	width: 100px;
-	z-index: 5;
-	&:hover {
-		text-decoration:none;
-	}
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  width: 100px;
+  z-index: 5;
+  &:hover {
+    text-decoration: none;
+  }
 }
+
 .arrow-text {
   position: relative;
   left: 0%;
@@ -135,129 +137,131 @@
 }
 
 .arrow-down {
-    position: relative;
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
-    z-index: 2;
-    overflow: hidden;
-    width: 60px;
-    height: 56px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 32px;
-    justify-content: center;
-    -webkit-align-self: flex-end;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    font-family: Klara-Icons-Filled;
-    color: #fff;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
+  position: relative;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2;
+  overflow: hidden;
+  width: 60px;
+  height: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 32px;
+  justify-content: center;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-family: Klara-Icons-Filled;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
 }
 
 .stage-arrow-2 {
-    position: absolute;
-    left: 0%;
-    top: -25px;
-    right: 0%;
-    bottom: auto;
-    font-family: 'Klaraicons filled', sans-serif;
+  position: absolute;
+  left: 0%;
+  top: -25px;
+  right: 0%;
+  bottom: auto;
+  font-family: 'Klaraicons filled', sans-serif;
 }
 
 .product-devices-wrapper {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .product {
-    position: relative;
-    display: flex;
-    overflow: visible;
-    width: 100%;
-    height: 200vh;
-    margin-top: -100vh;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: $primary;
+  position: relative;
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  height: 200vh;
+  margin-top: -100vh;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $primary;
 }
+
 .master-container {
-	position: relative;
-    width: 100%;
-    max-width: 1280px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 40px;
-    padding-left: 40px;
-    justify-items: center;
-    flex: 1;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-items: center;
+  flex: 1;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
 }
+
 .product-devices-heading {
-	    max-width: 500px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 50px;
+  @media (min-width: 767px) {
+    padding: 0;
+    max-width: 500px;
     &.devise {
-    	max-width: 40%;
+      max-width: 40%;
     }
+  }
 }
+
 .porduct-devices-image-wrapper {
-	  position: absolute;
+  @media (min-width: 767px) {
+    position: absolute;
     left: 40%;
     top: 0px;
     right: 0%;
     bottom: 0px;
     display: flex;
-    max-width: 1200px;
-    margin-top: 64px;
-    margin-right: 40px;
-    margin-left: 40px;
-    align-items: center;
+  }
+  max-width: 1200px;
+  margin-top: 64px;
+  margin-right: 40px;
+  margin-left: 40px;
+  align-items: center;
 }
+
 .product-img {
-	width: 100%;
+  width: 100%;
 }
-.product-devices-heading {
-	max-width: 500px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-	&.devices{
-		max-width: 40%;
-	}
-}
+
 .webinar-series.home {
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #f7f7f7;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
 }
+
 .webinar-series-wrapper {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-	@media(min-width: 767px) {
-	display: grid;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  @media(min-width: 767px) {
+    display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 16px;
@@ -265,53 +269,62 @@
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
-   }
+  }
 }
+
 .webinar-series-content {
-    margin-top: 64px;
+  margin-top: 64px;
 }
+
 .telemedicine {
-	    position: relative;
-    margin-bottom: 150px;
-    padding-top: 160px;
+  position: relative;
+  margin-bottom: 150px;
+  padding-top: 160px;
 }
+
 .multichannel-telemedicine-content {
-	width: 100%;
-	@media (min-width: 768px) {
-	    width: 50%;
+  width: 100%;
+  width: 100%;
+  margin-bottom: 64px;
+  @media (min-width: 768px) {
+    width: 50%;
     margin-right: 0px;
     padding-right: 139px;
-   }
+    margin-bottom: 0;
+  }
 }
+
 .h-telemedicine {
-    max-width: 488px;
-    margin-top: 0px;
-    margin-bottom: 40px;
+  max-width: 488px;
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
+
 .multichannel-telemedicine-wrapper {
-	@media (min-width: 768px) {
-		display: flex;
-	}
-    display: block;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    align-items: flex-start;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    -ms-grid-columns: 1.75fr 1.25fr;
-    grid-template-columns: 1.75fr 1.25fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: flex-start;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  -ms-grid-columns: 1.75fr 1.25fr;
+  grid-template-columns: 1.75fr 1.25fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
+
 .multichannel-telemedicine-img-wrapper {
-	position: relative;
-	width: 100%;
-	margin: 0;
-	padding-right: 40px;
-	@media (min-width:768px ) {
-		width: 50%;
-		 display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding-right: 40px;
+  @media (min-width: 768px) {
+    width: 50%;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -325,63 +338,178 @@
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
-	}
-   
-    img {
-    	display: inline-block;
-    }
+  }
+  img {
+    display: inline-block;
+  }
 }
+
 ._2-phones-1 {
-    width: 48%;
-    margin-right: 2%;
+  width: 48%;
+  margin-right: 2%;
 }
+
 ._2-phones-2 {
-    width: 48%;
+  width: 48%;
 }
+
 .p-patients-texting {
-	    max-width: 488px;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-    font-size: 24px;
-    line-height: 32px;
+  max-width: 488px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  font-size: 24px;
+  line-height: 32px;
 }
+
 .patients-texting {
-	display: flex;
-    margin-bottom: 80px;
-    padding-top: 150px;
-    -webkit-box-orient: horizontal;
+  @media(max-width: 767px) {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  display: flex;
+  margin-bottom: 80px;
+  padding-top: 150px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.pt-img-wrapper {
+  position: relative;
+  left: 0px;
+  right: 42%;
+  display: block;
+  width: 50%;
+  max-width: 950px;
+  margin-top: 10px;
+  margin-right: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  @media(max-width: 767px) {
+    position: relative;
+    width: 100%;
+    margin: 60px 0px 56px;
+    padding-right: 16px;
+    padding-left: 16px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+.assistant-module {
+	background: $primary;
+	padding-top: 50px;
+	padding-bottom:50px;
+	@media (min-width: 767px) { 
+	    padding-top: 80px;
+    padding-bottom: 100px;
+   }
+}
+
+.assistant-module-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
-.pt-img-wrapper {
+.assistant-module-content {
 	    position: relative;
-    left: 0px;
-    right: 42%;
+    width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+}
+
+.assistant-speakbubbple-wrapper {
+	  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+        width: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    @media (min-width: 768px) {
+    	  width: 200px;
+    margin-top: 112px;
+    margin-bottom: 56px;
+    }
+}
+.b.klara-assistant-prov._2 {
+	width: 460px;
+    color: #fff;
+    margin-bottom: 56px;
+}
+.b {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.typed-text {
     display: block;
-    width: 50%;
-    max-width: 950px;
-    margin-top: 10px;
-    margin-right: 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    align-items: center;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
+    width: 100%;
+    min-height: 17vw;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    color: $color-pink-light;
+    font-size: 6.67vw;
+    line-height: 1.1em;
+    white-space: pre;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+    	margin-bottom: 88px;
+
+    }
+
+}
+
+._80p {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
