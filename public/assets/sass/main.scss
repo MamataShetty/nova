@@ -14,6 +14,25 @@
 	font-style: normal;
 }
 
+@font-face {font-family: "SofiaPro-Bold";
+  src: url("../fonts/05428692254b58ccb090358a3dfecfff.eot"); /* IE9*/
+  src: url("../fonts/05428692254b58ccb090358a3dfecfff.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/05428692254b58ccb090358a3dfecfff.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/05428692254b58ccb090358a3dfecfff.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/05428692254b58ccb090358a3dfecfff.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/05428692254b58ccb090358a3dfecfff.svg#SofiaPro-Bold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Sofia Medium";
+  src: url("../fonts/6eb802c6a07dd60496e67ca586038ce3.eot"); /* IE9*/
+  src: url("../fonts/6eb802c6a07dd60496e67ca586038ce3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.svg#Sofia W03 Medium") format("svg"); /* iOS 4.1- */
+}
+
+
 body {
 	font-family: Sofia Pro, sans-serif;
     color: #3c2d2d;
@@ -23,7 +42,10 @@ body {
 }
 
 h1,h2,h3 {
-	font-weight: 600;
+	font-family: "Sofia Medium";
+}
+b, strong {
+	font-family: "SofiaPro-Bold";
 }
 h2 {
     margin-top: 0px;
@@ -40,13 +62,20 @@ h2 {
 h3 {
     margin-top: 8px;
     margin-bottom: 8px;
-    font-family: sofia-pro, sans-serif;
     font-size: 22px;
     font-weight: 400;
     @media (min-width: 767px) {
     	font-size: 28px;
     line-height: 36px;
     }
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
 }
 .container-fluid {
 	max-width: 1280px;

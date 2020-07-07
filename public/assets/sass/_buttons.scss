@@ -15,15 +15,29 @@
     transition: background-color 300ms cubic-bezier(.789, .159, .25, 1);
     color: #fff;
     font-size: 20px;
+    &:hover {
+    	background:#625be1;
+    }
   }
 
-.btn-outline-button {
+.btn-outline-primary {
 	border:solid 2px $primary;
 	color: $primary;
 	&:hover, &:focus{
 		background:$primary;
 		color: #fff;
 		border-color: $primary
+	}
+}
+
+.btn-outline-white {
+	border:solid 2px #fff;
+	color: #fff;
+	&:hover, &:focus{
+		background:$primary;
+		border-color: $primary;
+		text-decoration:none;
+		color: #fff;
 	}
 }
 
