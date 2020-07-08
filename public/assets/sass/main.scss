@@ -15,21 +15,21 @@
 }
 
 @font-face {font-family: "SofiaPro-Bold";
-  src: url("../fonts/05428692254b58ccb090358a3dfecfff.eot"); /* IE9*/
-  src: url("../fonts/05428692254b58ccb090358a3dfecfff.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/05428692254b58ccb090358a3dfecfff.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/05428692254b58ccb090358a3dfecfff.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/05428692254b58ccb090358a3dfecfff.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/05428692254b58ccb090358a3dfecfff.svg#SofiaPro-Bold") format("svg"); /* iOS 4.1- */
+  src: url("../fonts/sofia-bold.eot"); /* IE9*/
+  src: url("../fonts/sofia-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/sofia-bold.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/sofia-bold.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/sofia-bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/sofia-bold.svg#SofiaPro-Bold") format("svg"); /* iOS 4.1- */
 }
 
 @font-face {font-family: "Sofia Medium";
-  src: url("../fonts/6eb802c6a07dd60496e67ca586038ce3.eot"); /* IE9*/
-  src: url("../fonts/6eb802c6a07dd60496e67ca586038ce3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/6eb802c6a07dd60496e67ca586038ce3.svg#Sofia W03 Medium") format("svg"); /* iOS 4.1- */
+  src: url("../fonts/sofia-medium.eot"); /* IE9*/
+  src: url("../fonts/sofia-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/sofia-medium.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/sofia-medium.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/sofia-medium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/sofia-medium.svg#Sofia W03 Medium") format("svg"); /* iOS 4.1- */
 }
 
 
@@ -81,3 +81,10 @@ h5 {
 	max-width: 1280px;
 }
 
+.white {
+  color: #fff;
+}
+._80p {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
