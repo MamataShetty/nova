@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nova</title>
+    <head>
+      <!-- Required meta tags -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+      <script defer src="/__/firebase/init.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="assets/js/custom.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+
+  </head>
+  <body>
+    <div id="message">
+      <div class="wrapper nova-holder">
+        <div class="nova-holder">
+          <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          	<div class="container-fluid">
+	            <a class="navbar-brand" href="/">Logo</a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarNav">
+	              <ul class="navbar-nav navbar-nav ml-lg-auto">
+	                <li class="nav-item active">
+	                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#"> For Patients</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#">For Providers</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">For Clinics</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#">Pricing</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link btn btn-outline-primary px-4" href="#">Sign In</a>
+	                </li>
+	                <!-- <li class="nav-item">
+	                  <a class="nav-link" href="#">Sign up for free</a>
+	                </li> -->
+	              </ul>
+	            </div>
+	           </div>
+          </nav>
+        </div>
+
+        <div class="td-stage-wrapper">
+        	<div class="telemedicine-stage">
+        		<div class="tm-stage-bg-wrapper">
+        			<div class="tm-stage-bg-content">
+        				<div class="tm-stage-img-wrapper">
+        					<div class="div-block-35">
+
+        						<img src="assets/images/home_banner.jpg" alt="" class="td-stage-woman" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+
+        		<div class="master-container tm-stage">
+        			<div class="telemedecine-stage-content-wrapper">
+        				<div class="telemedecine-stage-content">
+        					<h1 class="h-tm-stage">See your patients<br>wherever they are.</h1>
+        					<p class="b tm-stage">Klara enables powerful, multichannel telemedicine for your practice: real-time video visits, secure messaging and remote monitoring. All in one place.</p>
+        					<div class="tm-button-wrapper">
+        						<a href="#" class="btn btn-primary w-button">Free Demo</a>
+        						<a href="#" class="lightbox-link d-inline-block w-lightbox">
+        							<div class="btn btn-outline-primary">
+        								Watch Video
+        							</div>
+        							
+        						</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+				<div class="footer">
+				  <div class="master-container">
+				    <div class="footer-container">
+				    	<div class="row">
+				    		<div class="col-md-5">
+						      <a href="#Stage" class="footer-logo-wrapper text-white">
+						      	NOVA
+						      	<!-- <img src="#" height="30" alt="" class="footer-logo"> -->
+						      </a>
+						    </div>
+						    <div class="col-md-3">
+						      <div class="footer-link-list-wrapper">
+						      	<a href="/" class="footer-link">Home</a>
+						      	<a href="/patients" class="footer-link">For Patients</a>
+						      	<a href="/providers" class="footer-link">For Providers</a>
+						      	<a href="/clinics" class="footer-link">For Clinics</a>
+						      	<a href="/pricings" class="footer-link">Pricing</a>
+						      </div>
+						    </div>
+						    <div class="col-md-4">
+						      <div class="footer-icons-wrapper d-inline-flex  justify-content-between">
+						      	<a href="#" target="_blank" class="icon-button footer">
+						      		<img src="assets/images/facebook.svg" />
+						      	</a>
+						      	<a href="#" target="_blank" class="icon-button footer">
+						      		<img src="assets/images/twitter.svg" />
+						      	</a>
+						      	<a href="#" target="_blank" class="icon-button footer">
+						      		<img src="assets/images/linkedin.svg" style="height: 50px" />
+						      	</a>
+						      </div>
+						    </div>
+						  </div>
+				      <div id="w-node-894da0885c58-a0885c47" class="footer-copyright">© Klara Technologies, Inc. 2020</div>
+				    </div>
+				  </div>
+				</div>
+
+      </div>
+
+    </div>
+    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      	try {
+      		let app = firebase.app();
+      		let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+      		document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      	} catch (e) {
+      		console.error(e);
+      		document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      	}
+      });
+    </script>
+  </body>
+</html>

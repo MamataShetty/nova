@@ -26,4 +26,13 @@ $(document).ready(function() {
 			.delete()
 
 		  .go();
+
+		$(window).scroll(function(){
+		    if ($(this).scrollTop() > 100) {
+		       $('#navbar').addClass('navbar-nova');
+		    } else {
+		       $('#navbar').removeClass('navbar-nova');
+		    }
+		});
+
 });
