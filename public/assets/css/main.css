@@ -1364,6 +1364,26 @@ img {
     opacity: 0;
   }
 }
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 125%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 30%, 0px);
+  }
+}
+@keyframes slide-down-fade-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0px, 100%, 0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0px, 125%, 0px);
+  }
+}
 .td-stage-wrapper {
   padding-bottom: 350px;
   background-color: #f4f3f8;
@@ -1372,11 +1392,17 @@ img {
   .td-stage-wrapper {
     padding-top: 0px;
     padding-bottom: 0px;
-    background-image: url(https://assets.website-files.com/5dbafac…/5e74d36…_Emma.jpg);
+    background-image: url("../images/home_banner.jpg");
     background-position: 100% 50%;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
+}
+.td-stage-wrapper.scrollhide .td-stage-notebook {
+  animation: none;
+}
+.td-stage-wrapper.scrollhide .td-stage-phone {
+  animation: none;
 }
 
 .telemedicine-stage {
@@ -1542,6 +1568,11 @@ img {
     position: static;
   }
 }
+@media (max-width: 767px) {
+  .td-stage-woman {
+    object-position: 100% 50%;
+  }
+}
 
 .td-stage-notebook {
   position: absolute;
@@ -1559,7 +1590,7 @@ img {
   will-change: opacity, transform;
   transform: scale(2);
   transition: transform 2s ease;
-  animation: 2s ease 0s forwards 1 fadeout;
+  animation: 1s ease 0s forwards 1 fadeout;
 }
 .td-stage-notebook.scale-image-bg {
   /*opacity: 1;*/
@@ -1573,33 +1604,28 @@ img {
   will-change: opacity, transform;
   opacity: 0;
   transform-style: preserve-3d;
-  animation: 0.3s ease 0s normal forwards 1 slide-down-fade-out;
+  animation: 2s ease 0s normal forwards 1 slide-down-fade-out;
 }
 .td-stage-phone.slide-up-bg {
   transform: translate3d(0px, 30%, 0px);
   animation: 2s ease 0s normal forwards 1 slide-up-fade-in;
 }
 
-@keyframes slide-up-fade-in {
-  0% {
-    opacity: 0;
-    transform: translate3d(0px, 125%, 0px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0px, 30%, 0px);
+.cc-wrapper {
+  display: block;
+  max-width: 488px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .cc-wrapper {
+    display: none;
+    margin-right: auto;
+    margin-left: 0px;
   }
 }
-@keyframes slide-down-fade-out {
-  0% {
-    opacity: 1;
-    transform: translate3d(0px, 100%, 0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(0px, 125%, 0px);
-  }
-}
+
 @font-face {
   font-family: "Sofia Pro";
   src: url("../fonts/sofiapro-light.eot");
