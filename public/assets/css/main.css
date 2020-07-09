@@ -1342,6 +1342,28 @@ img {
     transform: scale(1);
   }
 }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .td-stage-wrapper {
   padding-bottom: 350px;
   background-color: #f4f3f8;
@@ -1430,6 +1452,9 @@ img {
   max-width: 50px;
   margin-bottom: 120px;
 }
+.telemedecine-stage-content.hide-text {
+  display: none;
+}
 @media (min-width: 767px) {
   .telemedecine-stage-content {
     margin-bottom: 120px;
@@ -1454,7 +1479,7 @@ img {
   overflow: hidden;
   width: 100vw;
   height: 150vh;
-  margin-bottom: -80px;
+  margin-bottom: -258px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1500,17 +1525,17 @@ img {
   align-items: center;
 }
 
-.td-stage-phone {
-  position: relative;
-  margin-top: -60%;
-}
-
 .td-stage-woman {
   display: block;
   flex: 0 auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-origin: 50% 50%;
+  transition: transform 2s ease;
+  transform: scale(2);
+}
+.td-stage-woman.scale-img {
+  transform: scale(1);
 }
 @media (max-width: 991px) {
   .td-stage-woman {
@@ -1518,6 +1543,63 @@ img {
   }
 }
 
+.td-stage-notebook {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: auto;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  will-change: opacity, transform;
+  transform: scale(2);
+  transition: transform 2s ease;
+  animation: 2s ease 0s forwards 1 fadeout;
+}
+.td-stage-notebook.scale-image-bg {
+  /*opacity: 1;*/
+  animation: 2s ease 0s normal forwards 1 fadein;
+  transform: scale(1);
+}
+
+.td-stage-phone {
+  position: relative;
+  margin-top: -60%;
+  will-change: opacity, transform;
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: 0.3s ease 0s normal forwards 1 slide-down-fade-out;
+}
+.td-stage-phone.slide-up-bg {
+  transform: translate3d(0px, 30%, 0px);
+  animation: 2s ease 0s normal forwards 1 slide-up-fade-in;
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 125%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 30%, 0px);
+  }
+}
+@keyframes slide-down-fade-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0px, 100%, 0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0px, 125%, 0px);
+  }
+}
 @font-face {
   font-family: "Sofia Pro";
   src: url("../fonts/sofiapro-light.eot");

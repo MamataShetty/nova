@@ -77,6 +77,9 @@
 .telemedecine-stage-content {
   max-width: 50px;
   margin-bottom: 120px;
+  &.hide-text {
+  	display: none;
+  }
   @media (min-width: 767px) {
     margin-bottom: 120px;
   }
@@ -98,7 +101,7 @@
   overflow: hidden;
   width: 100vw;
   height: 150vh;
-  margin-bottom: -80px;
+  margin-bottom: -258px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -142,10 +145,6 @@
   align-items: center;
 }
 
-.td-stage-phone {
-  position: relative;
-  margin-top: -60%;
-}
 
 .td-stage-woman {
   display: block;
@@ -153,7 +152,80 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-origin: 50% 50%;
+  transition: transform 2s ease;
+  transform: scale(2);
+
+  &.scale-img{
+	  transform: scale(1);
+	}
+
   @media (max-width: 991px) {
     position: static;
   }
 }
+.td-stage-notebook {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: auto;
+    opacity:0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    will-change: opacity, transform;
+    transform: scale(2);
+    transition: transform 2s ease;
+    animation: 2s ease 0s forwards 1 fadeout;
+    &.scale-image-bg {
+    	/*opacity: 1;*/
+    	 animation: 2s ease 0s normal forwards 1 fadein;
+    	transform: scale(1);
+    }
+}
+
+
+
+.td-stage-phone {
+  position: relative;
+  margin-top: -60%;
+  will-change: opacity, transform;
+   opacity: 0;
+   transform-style: preserve-3d;
+    animation: .3s ease 0s normal forwards 1 slide-down-fade-out;
+   &.slide-up-bg {
+   	    transform: translate3d(0px, 30%, 0px);
+   	    animation: 2s ease 0s normal forwards 1 slide-up-fade-in;
+   }
+}
+
+@keyframes slide-up-fade-in{
+    0% {
+        opacity:0;
+         transform: translate3d(0px, 125%, 0px);
+    }
+    100% {
+        opacity:1;
+        transform: translate3d(0px, 30%, 0px);
+    }
+}
+
+
+
+@keyframes slide-down-fade-out{
+    0% {
+        opacity:1;
+        transform: translate3d(0px, 100%, 0px);
+
+    }
+    100% {
+        opacity:0;
+         transform: translate3d(0px, 125%, 0px);
+
+    }
+
+}
+
