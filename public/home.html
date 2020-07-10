@@ -28,15 +28,22 @@
   </head>
   <body>
     <div id="message">
-      <div class="wrapper nova-holder">
+      <div class="wrapper">
         <div class="nova-holder">
           <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
           	<div class="container-fluid">
-	            <a class="navbar-brand" href="/">Logo</a>
+	            <a class="navbar-brand" href="/"><b>Logo</b></a>
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	            <span class="navbar-toggler-icon"></span>
 	            </button>
 	            <div class="collapse navbar-collapse" id="navbarNav">
+	            	<div class="d-flex justify-content-between d-lg-none">
+		            	<a class="navbar-brand text-white" href="/"><b>Logo</b></a>
+			            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			            	<span class="navbar-toggler-icon"></span>
+			            </button>
+			           </div>
+
 	              <ul class="navbar-nav navbar-nav ml-lg-auto">
 	                <li class="nav-item active">
 	                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -53,8 +60,11 @@
 	                <li class="nav-item">
 	                  <a class="nav-link" href="#">Pricing</a>
 	                </li>
-	                <li class="nav-item">
+	                <li class="nav-item d-none d-lg-block">
 	                  <a class="nav-link btn btn-outline-primary px-4" href="#">Sign In</a>
+	                </li>
+	                <li class="nav-item d-block d-lg-none">
+	                  <a class="nav-link btn btn-outline-white d-inline-block px-4" href="#">Sign In</a>
 	                </li>
 	                <!-- <li class="nav-item">
 	                  <a class="nav-link" href="#">Sign up for free</a>

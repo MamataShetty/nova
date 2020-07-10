@@ -70,20 +70,100 @@
   -ms-flex-align: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .nova-holder .navbar {
+    height: 56px;
+  }
+}
+.nova-holder .navbar .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+.nova-holder .navbar .navbar-toggler:focus {
+  outline: none;
+}
+.nova-holder .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(60, 50, 170, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+}
+.nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon:before, .nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon:after {
+  position: absolute;
+  right: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+  animation: 2s linear;
+}
+.nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon:before {
+  transform: rotate(45deg);
+}
+.nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon:after {
+  transform: rotate(-45deg);
+}
+@media (max-width: 767px) {
+  .nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon:before, .nova-holder .navbar .navbar-collapse.show .navbar-toggler-icon:after {
+    height: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .nova-holder .navbar .navbar-collapse {
+    background: #350f54;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    transition: 0.2s linear;
+  }
+  .nova-holder .navbar .navbar-collapse .active .nav-link {
+    color: #fff;
+  }
+  .nova-holder .navbar .navbar-collapse .nav-link {
+    color: #fff;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .nova-holder .navbar .navbar-collapse {
+    padding: 10px 16px;
+  }
+}
+.nova-holder .navbar .collapsing {
+  -webkit-transition: height 0.2s linear;
+  -o-transition: height 0.2s linear;
+  transition: height 0.2s linear;
+}
 .nova-holder .navbar.navbar-nova {
   background: #fff;
   box-shadow: 0 6px 14px 0 rgba(60, 45, 45, 0.15);
 }
 .nova-holder .navbar .container-fluid {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .nova-holder .navbar .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 767px) {
+  .nova-holder .navbar .container-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 .nova-holder .navbar .nav-link {
   color: #3c32aa;
   font-size: 20px;
   line-height: 28px;
   text-decoration: none;
-  font-weight: 600;
+  font-family: "Sofia Medium";
   margin: 0 6px;
 }
 .nova-holder .navbar .active .nav-link {
@@ -1783,7 +1863,8 @@ img {
   animation-delay: 2s;
 }
 
-.demo_img_02, .demo_img_03 {
+.demo_img_02,
+.demo_img_03 {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
@@ -1831,11 +1912,14 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Sofia Medium";
 }
 
-b, strong {
+b,
+strong {
   font-family: "SofiaPro-Bold";
 }
 

@@ -28,7 +28,7 @@ $(document).ready(function() {
 		  .go();
 
 		$(window).scroll(function(){
-	    if ($(this).scrollTop() > 500) {
+	    if ($(this).scrollTop() > 200) {
 	       $('#navbar').addClass('navbar-nova');
 	    } else {
 	       $('#navbar').removeClass('navbar-nova');
