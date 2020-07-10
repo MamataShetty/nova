@@ -9,6 +9,10 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
+  @media (max-width: 479px) {
+  	background-position: 63% -78px;
+    background-size: 890px;
+  }
   &.scrollhide {
   	.td-stage-notebook {
   		animation: none;
@@ -63,6 +67,9 @@
     height: 100vh;
     margin-bottom: 60px;
   }
+   @media (max-width: 479px) {
+   	position:	relative;
+   }
 }
 
 .tm-stage {
@@ -102,6 +109,11 @@
     display: none;
     margin-bottom: 20px;
   }
+    @media (max-width: 479px) { 
+    	    display: flex;
+    margin-bottom: 32px;
+
+    }
 }
 
 .tm-stage-bg-content {
@@ -324,3 +336,23 @@
     order: 1;
    }
 }
+
+.demo_img_03 {
+	animation-delay: 2s;
+}
+
+ .demo_img_02,.demo_img_03 {
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+      animation-name: bounce-1;
+      animation-timing-function: linear;
+  }
+  @keyframes bounce-1 {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+  }
+
+
+

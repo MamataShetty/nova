@@ -7,7 +7,6 @@
 }
 
 .btn-primary {
-  margin-right: 24px;
   border-style: none;
   border-width: 0px;
   border-color: #3c32aa;
@@ -17,6 +16,12 @@
   transition: background-color 300ms cubic-bezier(0.789, 0.159, 0.25, 1);
   color: #fff;
   font-size: 20px;
+  margin-right: 16px;
+}
+@media (min-width: 767px) {
+  .btn-primary {
+    margin-right: 24px;
+  }
 }
 .btn-primary:hover {
   background: #625be1;
@@ -313,6 +318,20 @@
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
+@media (max-width: 479px) {
+  .master-container {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .master-container {
+    height: 100vh;
+    margin-bottom: 60px;
+  }
+}
 
 .product-devices-heading {
   width: 100%;
@@ -601,7 +620,7 @@
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .assistant-speakbubbple-wrapper {
     width: 200px;
     margin-top: 112px;
@@ -616,8 +635,14 @@
 }
 
 .b {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 26px;
+}
+@media (min-width: 767px) {
+  .b {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .typed-text {
@@ -1398,6 +1423,12 @@ img {
     background-repeat: no-repeat;
   }
 }
+@media (max-width: 479px) {
+  .td-stage-wrapper {
+    background-position: 63% -78px;
+    background-size: 890px;
+  }
+}
 .td-stage-wrapper.scrollhide .td-stage-notebook {
   animation: none;
 }
@@ -1456,6 +1487,11 @@ img {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 479px) {
+  .master-container.tm-stage {
+    position: relative;
+  }
+}
 
 .tm-stage {
   position: relative;
@@ -1497,6 +1533,12 @@ img {
   .b.tm-stage {
     display: none;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .b.tm-stage {
+    display: flex;
+    margin-bottom: 32px;
   }
 }
 
@@ -1737,6 +1779,29 @@ img {
   }
 }
 
+.demo_img_03 {
+  animation-delay: 2s;
+}
+
+.demo_img_02, .demo_img_03 {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @font-face {
   font-family: "Sofia Pro";
   src: url("../fonts/sofiapro-light.eot");
@@ -1788,6 +1853,28 @@ h1 {
   }
 }
 
+@media (max-width: 479px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  h3 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .feature-content {
+    width: auto;
+    margin-left: 0px;
+    padding-right: 0%;
+  }
+}
 h2 {
   margin-top: 0px;
   margin-bottom: 40px;
