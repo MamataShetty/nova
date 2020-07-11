@@ -16,6 +16,11 @@
         "source": "/home",
         "destination": "/home.html",
         "type": 301
+      },{
+        // Returns a permanent redirect to "/bar" for requests to both "/foo" and "/foo/**"
+        "source": "/patients",
+        "destination": "/patients.html",
+        "type": 301
       }
     ]
   }
