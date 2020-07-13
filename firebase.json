@@ -13,13 +13,18 @@
         "destination": "/index.html"
       },{
         // Returns a permanent redirect to "/bar" for requests to both "/foo" and "/foo/**"
-        "source": "/home",
-        "destination": "/home.html",
+        "source": "/patients",
+        "destination": "/patients.html",
         "type": 301
       },{
         // Returns a permanent redirect to "/bar" for requests to both "/foo" and "/foo/**"
-        "source": "/patients",
-        "destination": "/patients.html",
+        "source": "/providers",
+        "destination": "/providers.html",
+        "type": 301
+      },{
+        // Returns a permanent redirect to "/bar" for requests to both "/foo" and "/foo/**"
+        "source": "/clinics",
+        "destination": "/clinics.html",
         "type": 301
       }
     ]

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nova</title>
+    <head>
+      <!-- Required meta tags -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+      <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+      <script defer src="/__/firebase/init.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+      <script type="text/javascript" src="assets/js/custom.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+
+  </head>
+  <body>
+    <div id="message">
+      <div class="wrapper nova-holder">
+        <div class="nova-holder">
+          <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          	<div class="container-fluid">
+	            <a class="navbar-brand" href="/"><b>Logo</b></a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarNav">
+	            	<div class="d-flex justify-content-between d-lg-none">
+		            	<a class="navbar-brand text-white" href="/"><b>Logo</b></a>
+			            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			            	<span class="navbar-toggler-icon"></span>
+			            </button>
+			           </div>
+
+	              <ul class="navbar-nav navbar-nav ml-lg-auto">
+	                <li class="nav-item active">
+	                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="/patients"> For Patients</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="/providers">For Providers</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="/clinics">For Clinics</a>
+	                </li>
+	                <li class="nav-item">
+	                  <a class="nav-link" href="#">Pricing</a>
+	                </li>
+	                <li class="nav-item d-none d-lg-block">
+	                  <a class="nav-link btn btn-outline-primary px-4" href="#">Sign In</a>
+	                </li>
+	                <li class="nav-item d-block d-lg-none">
+	                  <a class="nav-link btn btn-outline-white d-inline-block px-4" href="#">Sign In</a>
+	                </li>
+	                <!-- <li class="nav-item">
+	                  <a class="nav-link" href="#">Sign up for free</a>
+	                </li> -->
+	              </ul>
+	            </div>
+	           </div>
+          </nav>
+          <div class="hero-video">
+	          <div class="stage-backgoundvideo w-background-video w-background-video-atom">
+	            <video autoplay="" loop="" style="background-image:url()" muted="" playsinline=""  data-object-fit="cover">
+	              <source src="assets/images/banner-video.mp4">
+	              <!-- <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.webm"> -->
+	            </video>
+	          </div>
+	          <div class="hero-text-overlay"></div>
+	        </div>
+          <div class="hero-text">
+            <div class="master-container-stage">
+            	<div class="stage-heading-wrapper d-flex">
+	              <h1>Be there for your patients, no matter what</h1>
+	              <h6>Easy communication, seamless telemedicine, and workflow efficiency – all in one place</h6>
+	              <div class="d-flex">
+	              	<a href="" class="btn btn-primary">Free Demo</a>
+	              	<a href="" class="btn btn-outline-primary"> Watch Testimonial</a>
+	              </div>
+	            </div>
+            </div>
+          </div>
+          <a href="#product" class="arrow-wrapper w-100 d-inline-block">
+          	<h5 class="arrow-text">Read more</h5>
+          	<div class="arrow-down">
+          		<div class="stage-arrow-2">↓</div>
+          		<div class="stage-arrow-1">↓</div>
+          	</div>
+          </a>
+        </div>
+
+       <!--  <div class="product">
+        	<div id="product" class="anker"></div>
+        	<div class="product-bg"></div>
+					<div class="product-devices-wrapper home d-md-flex">
+					  <div class="master-container devices">
+					    <div class="product-devices-heading devices">
+					      <h2 class="text-white">Klara’s end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
+					    </div>
+					  </div>
+					  <div class="porduct-devices-image-wrapper">
+					  	<img src="assets/images/product.png" class="product-img"></div>
+					</div>
+					</div>
+				</div> -->
+				<div class="webinar-series home">
+				  <div  class="master-container">
+				    <div class="webinar-series-wrapper">
+				      <img src="assets/images/webinar-service.svg" alt="" class="img-fluid d-inline-block">
+				      <div class="webinar-series-content">
+				        <h5 class="ws-h5">Webinar Series</h5>
+				        <h2 class="ws-h2">The virtual extension of your medical practice June 11 – July 30</h2>
+				        <h4 class="mb-5">As your office sees more and more patients in person, you’ll need to create plans to maintain and grow the virtual side of your practice (and this is not just about video visits!). We’re here to help with live webinars on how to develop your practice strategy for long-term success.</h4>
+				        <a href="/webinars" class="btn btn-primary">See all webinars</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				
+				<div id="telemedicine" class="telemedicine">
+				  <div class="master-container">
+				    <div class="multichannel-telemedicine-wrapper home">
+				      <div class="multichannel-telemedicine-content">
+				        <h2 class="h-telemedicine">Powerful, multichannel telemedicine. All in one place.</h2>
+				        <p class="p-patients-texting">Conduct real-time video visits with up to 4 participants. No download, no login.</p>
+				        <p class="p-patients-texting">Billable e-visits and remote monitoring via asynchronous messaging and photos.</p>
+				        <a href="/telemedicine" class="btn btn-primary">Learn More</a>
+				      </div>
+				      <div class="multichannel-telemedicine-img-wrapper">
+				      	<img src="assets/images/Telemedicine-Conversation.png" alt="" class="_2-phones-1">
+				      	<img src="assets/images/Videocall.jpg" alt="" class="_2-phones-2">
+				      </div>
+				    </div>
+				    <div id="texting" class="patients-texting">
+				      <div class="pt-img-wrapper">
+				      		<img class="img-fluid" src="assets/images/webmessager.jpg" alt="">
+				      	</div>
+				      <div class="patients-texting-content">
+				        <h2 class="h-telemedicine">Give patients easy access to your practice</h2>
+				        <p class="p-patients-texting">A textable number, a “press-1-to-text” phone greeting, or our visual voicemail help you to convert phone calls to convenient texting.</p>
+				        <p class="p-patients-texting">And our website messenger turns eyeballs on your website into new visits. </p>
+				        <a href="/messaging" class="btn btn-primary">Learn More</a>
+				      </div>
+				    </div>
+				  </div>
+				</div> 
+
+				<div id="assistant-module" class="assistant-module">
+					<div class="master-container">
+						<div class="assistant-module-wrapper">
+							<h3 class="text-white">Introducing: Klara Assistant</h3>
+							<div class="assistant-speakbubbple-wrapper">
+								<div class="spinner">
+								  <div class="bounce1"></div>
+								  <div class="bounce2"></div>
+								  <div class="bounce3"></div>
+								</div>
+							</div>
+							<div class="assistant-module-content">
+								<div class="typed-text">I sent <strong>59</strong> pre-visit <br>instructions today.
+									<span class="ti-cursor" style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;"> </span>
+								</div>
+							</div>
+							<div class="b klara-assistant-prov _2">
+								Klara Assistant helps your practice grow by automating routine patient outreach. Send relevant messages that inform and engage your patients — without the repetitive work.
+							</div>
+							<a href="/assistant" class="btn btn-white">Start Automating</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="case-study _80p w-100">
+					<div class="master-container">
+						<div id="Case-Study" class="case-studie-grid">
+							<div class="case-study-content-wrapper-2">
+								<h5 class="h-case-study _1">Success Story</h5>
+								<div class="cs-icon">🗎</div>
+								<h3 class="h3-case-study">How Westside Family Medicine Improved Communication</h3>
+								<a href="#" class="btn btn-primary icon cta-desktop d-inline-flex">
+									<div class="button-icon mr-3">⤓</div>
+									<div class="button-text">Download Free Case Study</div>
+								</a>
+							</div>
+							<div class="case-study-video-bg _1">
+								<a href="#" class="lightbox-tm w-inline-block text-decoration-none">
+									<div class="btn btn-outline-white  ghost-button-white _1 d-inline-flex">
+										<div class="button-icon mr-3">▶</div>
+										<div class="button-text">Watch Testimonial</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section id="Stats" class="stats">
+					<div class="master-container">
+						<div class="feature-content numbers">
+							<h2 class="feature-content-heading">Let our numbers talk
+							</h2>
+						</div>
+						<div class="stats-wrapper">
+							<div class="stats-text _1">
+								<p class="stats-number">
+									<strong class="bold-text">85</strong>
+									<span class="stats-unit-span">%</span>
+									<br>
+								</p>
+								<div class="stats-content">
+									<h4>patient adoption in an average Klara practice
+									</h4>
+								</div>
+							</div>
+							<div class="stats-img _2">
+								<img src="assets/images/practice.svg">
+							</div>
+						</div>
+
+						<div class="stats-wrapper _2">
+							<div class="stats-img">
+								<div class="stats-img-wrapper">
+									<div>
+										<img src="assets/images/feedback.svg">
+									</div>
+								</div>
+							</div>
+							<div class="stats-text _2">
+								<p class="stats-number">
+									<strong>92</strong>
+									<span class="stats-unit-span">%</span>
+									<br>
+								</p>
+								<div class="stats-content">
+									<h4 class="heading-7">customers: “Klara helps us provide an amazing patient experience”
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="stats-wrapper">
+							<div class="stats-text _3">
+								<p class="stats-number">
+									<span class="stats-span">up to</span>
+									<strong>3</strong>
+									<span class="stats-unit-span">h
+									</span>
+									<br>
+								</p>
+								<div class="stats-content">
+									<h4 class="heading-7">saved per day per staff using Klara to communicate</h4>
+								</div>
+							</div>
+							<div class="stats-img">
+								<div class="stats-img-wrapper">
+									<div>
+										<img src="assets/images/communicate.svg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="ehr-integration">
+					<div class="master-container">
+						<div class="product-wrapper">
+							<div class="feature-content">
+								<h2 class="text-white ehr-heading">Seamlessly integrated with your EHR</h2>
+								<ul role="list" class="list white h4">
+									<li>Automated patient sync</li>
+									<li>File and message write-back to EHR</li>
+									<li>Powerful appointment reminders </li>
+								</ul>
+							</div>
+							<div class="nextech-animation-wrapper">
+								<div class="klara-ehr-animation">
+									<img src="assets/images/patient-sync.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div id="Demo" class="demo-600-rose _80p">
+					<div class="master-container">
+						<div class="demo-wrapper">
+							<div class="feature-content">
+								<h2 class="feature-content-heading demo">It’s easy to get started. Get a live demo now!</h2>
+								<p class="b demo">Your practice can be up and running in a matter of days. <br></p><a href="" class="btn btn-primary w-button">Free Demo</a>
+							</div>
+							<div class="demo-illustration-wrapper">
+								<div class="l-dem-illustration">
+									<img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5dd20d4ab88d00bb654f79a7_book_demo_01.svg" alt="" class="demo_img_01">
+									<img src="assets/images/book-demo2.svg" alt="" class="demo_img_02">
+									<img src="assets/images/book-demo3.svg" alt="" class="demo_img_03" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+				  <div class="master-container">
+						<div class="footer-container">
+							<div class="row">
+								<div class="col-lg-4 mb-4 mb-lg-0">
+									<h4 class="text-white mb-5">Learn About Nova Health</h4>
+								  <div class="footer-link-list-wrapper">
+										<a href="/home" class="footer-link">Home</a>
+										<a href="/patients" class="footer-link">For Patients</a>
+										<a href="/providers" class="footer-link">For Providers</a>
+										<a href="/clinics" class="footer-link">For Clinics</a>
+										<a href="/pricings" class="footer-link">Pricing</a>
+								  </div>
+								</div>
+								<div class="col-lg-4 mb-4 mb-lg-0">
+									<h4 class="text-white mb-5">Using Nova Health</h4>
+								  <div class="footer-link-list-wrapper">
+										<a href="/" class="footer-link">Community Forum</a>
+										<a href="/patients" class="footer-link">Privacy Policy</a>
+										<a href="/providers" class="footer-link">Terms of Service</a>
+										<a href="/clinics" class="footer-link">Status</a>
+										<a href="/pricings" class="footer-link">Help Center</a>
+								  </div>
+								</div>
+								<div class="col-lg-4 mb-4 mb-lg-0">
+								  <div class="footer-icons-wrapper d-inline-flex  justify-content-between">
+										<a href="#" target="_blank" class="icon-button footer">
+											<img src="assets/images/facebook.svg" />
+										</a>
+										<a href="#" target="_blank" class="icon-button footer">
+											<img src="assets/images/twitter.svg" />
+										</a>
+										<a href="#" target="_blank" class="icon-button footer">
+											<img src="assets/images/linkedin.svg" style="height: 50px" />
+										</a>
+								  </div>
+								  <div class="text-white">
+								  	<p>Our mission is to make telemedicine available to everyone,so we designed Nova Health to be simple and free for all to use.</p>
+										<p>Support:(844) 436-9963</p>
+										<p>© 2020 Nova Health.</p>
+								  </div>
+								</div>
+							 </div>
+						</div>
+				  </div>
+				</div>
+      </div>
+    </div>
+    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      	try {
+      		let app = firebase.app();
+      		let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+      		document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      	} catch (e) {
+      		console.error(e);
+      		document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      	}
+      });
+    </script>
+  </body>
+</html>

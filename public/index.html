@@ -7,7 +7,8 @@
     <title>Nova</title>
     <head>
       <!-- Required meta tags -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="assets/css/bootstrap.css" />
       <link rel="stylesheet" href="assets/css/main.css" />
       <!-- update the version number as needed -->
       <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
@@ -21,14 +22,13 @@
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-
       <script type="text/javascript" src="assets/js/custom.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
 
   </head>
   <body>
     <div id="message">
-      <div class="wrapper nova-holder">
+      <div class="wrapper">
         <div class="nova-holder">
           <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
           	<div class="container-fluid">
@@ -46,16 +46,16 @@
 
 	              <ul class="navbar-nav navbar-nav ml-lg-auto">
 	                <li class="nav-item active">
-	                  <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+	                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 	                </li>
 	                <li class="nav-item">
 	                  <a class="nav-link" href="/patients"> For Patients</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a class="nav-link" href="#">For Providers</a>
+	                  <a class="nav-link" href="/providers">For Providers</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">For Clinics</a>
+	                  <a class="nav-link" href="/clinics">For Clinics</a>
 	                </li>
 	                <li class="nav-item">
 	                  <a class="nav-link" href="#">Pricing</a>
@@ -73,210 +73,93 @@
 	            </div>
 	           </div>
           </nav>
-          <div class="hero-video">
-	          <div class="stage-backgoundvideo w-background-video w-background-video-atom">
-	            <video autoplay="" loop="" style="background-image:url()" muted="" playsinline=""  data-object-fit="cover">
-	              <source src="assets/images/banner-video.mp4">
-	              <!-- <source src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5df0374a637929e66c22a2ca_stage-bgvideo_s-transcode.webm"> -->
-	            </video>
-	          </div>
-	          <div class="hero-text-overlay"></div>
-	        </div>
-          <div class="hero-text">
-            <div class="master-container-stage">
-            	<div class="stage-heading-wrapper d-flex">
-	              <h1>Be there for your patients, no matter what</h1>
-	              <h6>Easy communication, seamless telemedicine, and workflow efficiency – all in one place</h6>
-	              <div class="d-flex">
-	              	<a href="" class="btn btn-primary">Free Demo</a>
-	              	<a href="" class="btn btn-outline-primary"> Watch Testimonial</a>
-	              </div>
-	            </div>
-            </div>
-          </div>
-          <a href="#product" class="arrow-wrapper w-100 d-inline-block">
-          	<h5 class="arrow-text">Read more</h5>
-          	<div class="arrow-down">
-          		<div class="stage-arrow-2">↓</div>
-          		<div class="stage-arrow-1">↓</div>
-          	</div>
-          </a>
         </div>
 
-       <!--  <div class="product">
-        	<div id="product" class="anker"></div>
-        	<div class="product-bg"></div>
-					<div class="product-devices-wrapper home d-md-flex">
-					  <div class="master-container devices">
-					    <div class="product-devices-heading devices">
-					      <h2 class="text-white">Klara’s end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
-					    </div>
-					  </div>
-					  <div class="porduct-devices-image-wrapper">
-					  	<img src="assets/images/product.png" class="product-img"></div>
-					</div>
-					</div>
-				</div> -->
-				<div class="webinar-series home">
-				  <div  class="master-container">
-				    <div class="webinar-series-wrapper">
-				      <img src="assets/images/webinar-service.svg" alt="" class="img-fluid d-inline-block">
-				      <div class="webinar-series-content">
-				        <h5 class="ws-h5">Webinar Series</h5>
-				        <h2 class="ws-h2">The virtual extension of your medical practice June 11 – July 30</h2>
-				        <h4 class="mb-5">As your office sees more and more patients in person, you’ll need to create plans to maintain and grow the virtual side of your practice (and this is not just about video visits!). We’re here to help with live webinars on how to develop your practice strategy for long-term success.</h4>
-				        <a href="/webinars" class="btn btn-primary">See all webinars</a>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-				
-				<div id="telemedicine" class="telemedicine">
-				  <div class="master-container">
-				    <div class="multichannel-telemedicine-wrapper home">
-				      <div class="multichannel-telemedicine-content">
-				        <h2 class="h-telemedicine">Powerful, multichannel telemedicine. All in one place.</h2>
-				        <p class="p-patients-texting">Conduct real-time video visits with up to 4 participants. No download, no login.</p>
-				        <p class="p-patients-texting">Billable e-visits and remote monitoring via asynchronous messaging and photos.</p>
-				        <a href="/telemedicine" class="btn btn-primary">Learn More</a>
-				      </div>
-				      <div class="multichannel-telemedicine-img-wrapper">
-				      	<img src="assets/images/Telemedicine-Conversation.png" alt="" class="_2-phones-1">
-				      	<img src="assets/images/Videocall.jpg" alt="" class="_2-phones-2">
-				      </div>
-				    </div>
-				    <div id="texting" class="patients-texting">
-				      <div class="pt-img-wrapper">
-				      		<img class="img-fluid" src="assets/images/webmessager.jpg" alt="">
-				      	</div>
-				      <div class="patients-texting-content">
-				        <h2 class="h-telemedicine">Give patients easy access to your practice</h2>
-				        <p class="p-patients-texting">A textable number, a “press-1-to-text” phone greeting, or our visual voicemail help you to convert phone calls to convenient texting.</p>
-				        <p class="p-patients-texting">And our website messenger turns eyeballs on your website into new visits. </p>
-				        <a href="/messaging" class="btn btn-primary">Learn More</a>
-				      </div>
-				    </div>
-				  </div>
-				</div> 
+        <div class="td-stage-wrapper scrollhide">
+        	<div class="telemedicine-stage">
+        		<div class="tm-stage-bg-wrapper">
+        			<div class="tm-stage-bg-content">
+        				<div class="tm-stage-img-wrapper">
+        					<div class="div-block-35 scrollme">
+        						<img src="assets/images/home_banner.jpg" alt="" class="td-stage-woman" />
+        						<img src="assets/images/home_banner_frame.png" alt="" class="td-stage-notebook" />
+        					</div>
+        					<img src="assets/images/home_mobile_view.png" alt="" class="td-stage-phone" >
+        					<div class="cc-wrapper pt-5">
+        						<h2>High-quality virtual visits on any device</h2>
+        						<p class="b tm">Conduct real-time virtual visits with your patients. Up to 4 participants. No download, no login. Just go!</p>
+        						<a href="#" class="btn btn-primary w-button">Free Demo</a>
+        					</div>
 
-				<div id="assistant-module" class="assistant-module">
-					<div class="master-container">
-						<div class="assistant-module-wrapper">
-							<h3 class="text-white">Introducing: Klara Assistant</h3>
-							<div class="assistant-speakbubbple-wrapper">
-								<div class="spinner">
-								  <div class="bounce1"></div>
-								  <div class="bounce2"></div>
-								  <div class="bounce3"></div>
-								</div>
-							</div>
-							<div class="assistant-module-content">
-								<div class="typed-text">I sent <strong>59</strong> pre-visit <br>instructions today.
-									<span class="ti-cursor" style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;"> </span>
-								</div>
-							</div>
-							<div class="b klara-assistant-prov _2">
-								Klara Assistant helps your practice grow by automating routine patient outreach. Send relevant messages that inform and engage your patients — without the repetitive work.
-							</div>
-							<a href="/assistant" class="btn btn-white">Start Automating</a>
-						</div>
-					</div>
-				</div>
+        				</div>
+        			</div>
+        		</div>
 
-				<div class="case-study _80p w-100">
-					<div class="master-container">
-						<div id="Case-Study" class="case-studie-grid">
-							<div class="case-study-content-wrapper-2">
-								<h5 class="h-case-study _1">Success Story</h5>
-								<div class="cs-icon">🗎</div>
-								<h3 class="h3-case-study">How Westside Family Medicine Improved Communication</h3>
-								<a href="#" class="btn btn-primary icon cta-desktop d-inline-flex">
-									<div class="button-icon mr-3">⤓</div>
-									<div class="button-text">Download Free Case Study</div>
-								</a>
-							</div>
-							<div class="case-study-video-bg _1">
-								<a href="#" class="lightbox-tm w-inline-block text-decoration-none">
-									<div class="btn btn-outline-white  ghost-button-white _1 d-inline-flex">
-										<div class="button-icon mr-3">▶</div>
-										<div class="button-text">Watch Testimonial</div>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+        		<div class="master-container tm-stage">
+        			<div class="telemedecine-stage-content-wrapper">
+        				<div class="telemedecine-stage-content">
+        					<h1 class="h-tm-stage">See your patients<br>wherever they are.</h1>
+        					<p class="b tm-stage">Klara enables powerful, multichannel telemedicine for your practice: real-time video visits, secure messaging and remote monitoring. All in one place.</p>
+        					<div class="tm-button-wrapper">
+        						<a href="#" class="btn btn-primary w-button">Free Demo</a>
+        						<a href="#" class="lightbox-link d-inline-block w-lightbox">
+        							<div class="btn btn-outline-primary">
+        								Watch Video
+        							</div>
+        							
+        						</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
 
-				<section id="Stats" class="stats">
-					<div class="master-container">
-						<div class="feature-content numbers">
-							<h2 class="feature-content-heading">Let our numbers talk
-							</h2>
-						</div>
-						<div class="stats-wrapper">
-							<div class="stats-text _1">
-								<p class="stats-number">
-									<strong class="bold-text">85</strong>
-									<span class="stats-unit-span">%</span>
-									<br>
-								</p>
-								<div class="stats-content">
-									<h4>patient adoption in an average Klara practice
-									</h4>
-								</div>
-							</div>
-							<div class="stats-img _2">
-								<img src="assets/images/practice.svg">
-							</div>
-						</div>
+        <div class="s-convinient-communication d-flex d-md-none py-5">
+        	<div class="master-container">
+        		<div class="cc-wrapper d-block my-5">
+        			<h2 class="h-telemedicine">High-quality virtual visits on any device</h2>
+        			<p class="b tm">Conduct real-time virtual visits with your patients. Up to 4 participants. No download, no login. Just go!</p>
+        			<a href="#" class="btn btn-primary">Free Demo</a>
+        		</div>
+        		<img src="assets/images/Video-Call-Mobile.jpg" />
+        	</div>
+        </div>
 
-						<div class="stats-wrapper _2">
-							<div class="stats-img">
-								<div class="stats-img-wrapper">
-									<div>
-										<img src="assets/images/feedback.svg">
-									</div>
-								</div>
-							</div>
-							<div class="stats-text _2">
-								<p class="stats-number">
-									<strong>92</strong>
-									<span class="stats-unit-span">%</span>
-									<br>
-								</p>
-								<div class="stats-content">
-									<h4 class="heading-7">customers: “Klara helps us provide an amazing patient experience”
-									</h4>
-								</div>
-							</div>
-						</div>
+        <div class="multichannel-telemedicine tm">
+        	<div class="master-container">
+        		<div class="secure-messaging">
+        			<div class="multichannel-telemedicine-content">
+        				<h2 class="h-telemedicine">Conversational care with secure messaging</h2>
+        				<p class="p-patients-texting">With Klara you provide your patients a quick and convenient way to contact you with their concerns. Use Klara to communicate around the visit about scheduling, insurance verification, care instructions, and more.</p>
+        				<a href="#" class="btn btn-primary">Free Demo</a>
+        			</div>
+        			<div class="multichannel-telemedicine-img-wrapper">
+        				<img src="assets/images/Telemedicine_SMS_02.png" alt="" class="_2-phones-1" />
+        				<img src="assets/images/Telemedicine_Conversation_03.png" alt="" class="_2-phones-2">
+        			</div>
+        		</div>
+        		<div class="tm-collaborate">
+        			<div class="tm-collaborate-img-wrapper">
+        				<img src="assets/images/Telemedicine_04_Doctor.png" alt="" />
+        			</div>
+      				<div class="patients-texting-content mb-5">
+      					<h2 class="h-telemedicine">Collaborate as a medical team. Wherever you are.</h2>
+      					<div class=" row">
+      						<div class="col-12 col-md-6">
+      							<p class="p-patients-texting">Powerful workflow management tools (internal notes, assignment logic, team inboxes) ensure patient requests get to the right place and are quickly responded to.<br></p>
+      						</div>
+      						<div class="col-12 col-md-6">
+      							<p class="p-patients-texting">Our cloud-based platform works on all devices from anywhere. All you need is an internet connection.</p>
+      						</div>
+      					</div>
+      					<a href="#" class="btn btn-primary mb-4">Free Demo</a>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
 
-						<div class="stats-wrapper">
-							<div class="stats-text _3">
-								<p class="stats-number">
-									<span class="stats-span">up to</span>
-									<strong>3</strong>
-									<span class="stats-unit-span">h
-									</span>
-									<br>
-								</p>
-								<div class="stats-content">
-									<h4 class="heading-7">saved per day per staff using Klara to communicate</h4>
-								</div>
-							</div>
-							<div class="stats-img">
-								<div class="stats-img-wrapper">
-									<div>
-										<img src="assets/images/communicate.svg">
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-
-				<section class="ehr-integration">
+        <section class="ehr-integration">
 					<div class="master-container">
 						<div class="product-wrapper">
 							<div class="feature-content">
@@ -313,6 +196,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="footer">
 				  <div class="master-container">
 						<div class="footer-container">
@@ -320,7 +204,7 @@
 								<div class="col-lg-4 mb-4 mb-lg-0">
 									<h4 class="text-white mb-5">Learn About Nova Health</h4>
 								  <div class="footer-link-list-wrapper">
-										<a href="/home" class="footer-link">Home</a>
+										<a href="/" class="footer-link">Home</a>
 										<a href="/patients" class="footer-link">For Patients</a>
 										<a href="/providers" class="footer-link">For Providers</a>
 										<a href="/clinics" class="footer-link">For Clinics</a>
@@ -360,6 +244,7 @@
 				  </div>
 				</div>
       </div>
+
     </div>
     <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
     <script>

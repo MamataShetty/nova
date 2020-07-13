@@ -1,0 +1,54 @@
+.assistant-holder {
+  .nova-holder .navbar.navbar-nova {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.quote-1-person {
+	background: $theme3;
+	 display: flex;
+    min-height: 345px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: 767px) {
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    }
+    .media p {
+    	background: $primary;
+    	    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    width: 520px;
+    padding: 8px 16px 10px;
+    border-radius: 8px;
+    }
+    .b2-quote-1-person {
+    	    display: inline-block;
+    margin-right: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    }
+    .b2-quote-1-person.titel {
+    	font-weight: 400;
+    }
+
+}
+ .image-36 {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -10px;
+    bottom: 0%;
+    width: auto;
+    height: 84%;
+}

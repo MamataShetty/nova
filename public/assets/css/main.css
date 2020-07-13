@@ -585,8 +585,14 @@
 
 .telemedicine {
   position: relative;
-  margin-bottom: 150px;
-  padding-top: 160px;
+  margin-bottom: 50px;
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .telemedicine {
+    margin-bottom: 150px;
+    padding-top: 160px;
+  }
 }
 
 .multichannel-telemedicine-content {
@@ -1495,6 +1501,10 @@ img {
   text-align: left;
   text-decoration: none;
 }
+.footer-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
 
 .footer-copyright {
   color: #f4cece;
@@ -1789,7 +1799,7 @@ img {
   flex: 0 auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform-origin: 50% 50%;
+  transform-origin: 50% 68%;
   transition: transform 2s ease;
   transform: scale(2);
 }
@@ -2074,6 +2084,59 @@ img {
   .hero-img-left .texting-message {
     order: -1;
   }
+}
+
+.assistant-holder .nova-holder .navbar.navbar-nova {
+  background: transparent;
+  box-shadow: none;
+}
+
+.quote-1-person {
+  background: #ffefef;
+  display: flex;
+  min-height: 345px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 767px) {
+  .quote-1-person {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.quote-1-person .media p {
+  background: #3c32aa;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  width: 520px;
+  padding: 8px 16px 10px;
+  border-radius: 8px;
+}
+.quote-1-person .b2-quote-1-person {
+  display: inline-block;
+  margin-right: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.quote-1-person .b2-quote-1-person.titel {
+  font-weight: 400;
+}
+
+.image-36 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -10px;
+  bottom: 0%;
+  width: auto;
+  height: 84%;
 }
 
 @font-face {

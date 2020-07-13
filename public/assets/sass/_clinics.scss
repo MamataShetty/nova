@@ -377,8 +377,12 @@
 
 .telemedicine {
   position: relative;
-  margin-bottom: 150px;
-  padding-top: 160px;
+  margin-bottom: 50px;
+  padding-top: 60px;
+  @media (min-width: 768px) {
+    margin-bottom: 150px;
+    padding-top: 160px;
+  }
 }
 
 .multichannel-telemedicine-content {
@@ -1234,6 +1238,10 @@ img {
   line-height: 40px;
   text-align: left;
   text-decoration: none;
+  &:hover {
+    text-decoration:none; 
+    color: #fff;
+  }
 }
 
 .footer-copyright {
