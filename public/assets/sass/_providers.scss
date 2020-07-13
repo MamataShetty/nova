@@ -6,49 +6,89 @@
 }
 
 .quote-1-person {
-	background: $theme3;
-	 display: flex;
-    min-height: 345px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    @media (min-width: 767px) {
-    	padding-top: 80px;
-    	padding-bottom: 80px;
-    }
-    .media p {
-    	background: $primary;
-    	    color: #fff;
+  background: $theme3;
+  display: flex;
+  min-height: 345px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: 767px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .media p {
+    background: $primary;
+    color: #fff;
     font-size: 24px;
     line-height: 32px;
     width: 520px;
     padding: 8px 16px 10px;
     border-radius: 8px;
-    }
-    .b2-quote-1-person {
-    	    display: inline-block;
+  }
+  .b2-quote-1-person {
+    display: inline-block;
     margin-right: 3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 10px;
-    }
-    .b2-quote-1-person.titel {
-    	font-weight: 400;
-    }
-
+  }
+  .b2-quote-1-person.titel {
+    font-weight: 400;
+  }
 }
- .image-36 {
-    position: absolute;
-    left: auto;
-    top: auto;
-    right: -10px;
-    bottom: 0%;
-    width: auto;
-    height: 84%;
+
+.image-36 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -10px;
+  bottom: 0%;
+  width: auto;
+  height: 84%;
+}
+
+.view-bottom {
+  opacity: 0;
+  -webkit-transform: translateY(4em);
+  transform: translateY(4em);
+  transition: transform .3s .25s cubic-bezier(0, 1, .3, 1), opacity .3s .25s ease-out;
+  transition: transform .3s .25s cubic-bezier(0, 1, .3, 1), opacity .3s .25s ease-out, -webkit-transform .3s .25s cubic-bezier(0, 1, .3, 1);
+  will-change: transform, opacity;
+}
+
+.view-bottom.is-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.show-on-scroll.view-media {
+  img {
+    opacity: 0;
+    transition: transform .5s linear,
+  }
+  .media-body {
+    opacity: 0;
+    height: 0;
+    -webkit-transform: translateX(-4em);
+    transform: translateX(-4em);
+    transition: transform .5s linear, height .5s linear;
+    will-change: transform, height;
+  }
+}
+
+.show-on-scroll.view-media.is-visible {
+  img {
+    opacity: 1;
+  }
+  .media-body {
+    height: auto;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
