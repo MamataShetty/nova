@@ -1,4 +1,6 @@
 // Detect request animation frame
+
+$(document).ready(function () { 
 var scroll = window.requestAnimationFrame ||
              // IE Fallback
              function(callback){ window.setTimeout(callback, 1000/60)};
@@ -38,3 +40,4 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+})

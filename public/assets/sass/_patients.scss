@@ -11,6 +11,11 @@
     height: 680px;
     margin-bottom: 40px;
   }
+  @media (max-width: 479px) {
+      height: auto;
+      max-height: none;
+      min-height: auto;
+  }
 }
 
 .hero-2-col {
@@ -54,6 +59,7 @@
 .div-block-40 {
   margin-bottom: 24px;
   @media (max-width: 767px) {
+    margin-top: 50px;
     width: 85%;
     margin-top: 60px;
     -webkit-box-ordinal-group: 0;

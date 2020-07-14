@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <title>Nova</title>
     <head>
       <!-- Required meta tags -->
@@ -21,21 +21,25 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <script type="text/javascript" src="assets/js/custom.js"></script>
       <script type="text/javascript" src="assets/js/scroll-animation.js"></script>
-      
+
   </head>
   <body>
     <div id="message">
-      <div class="wrapper nova-holder">
+      <div class="wrapper">
         <div class="nova-holder">
           <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/"><b>Logo</b></a>
+              <a class="navbar-brand" href="/">
+              	<img src="assets/images/logo_nova.svg" />
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-flex justify-content-between d-lg-none">
-                  <a class="navbar-brand text-white" href="/"><b>Logo</b></a>
+                  <a class="navbar-brand text-white" href="/">
+                  	<img src="assets/images/logo_nova_white.svg" />
+                  </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -89,7 +93,32 @@
                 </div>
               </div>
             </div>
+
+            <a href="#product" class="arrow-wrapper w-100 d-inline-block">
+	          	<h5 class="arrow-text">Read more</h5>
+	          	<div class="arrow-down">
+	          		<div class="stage-arrow-2">↓</div>
+	          		<div class="stage-arrow-1">↓</div>
+	          	</div>
+	          </a>
+
           </div>
+
+          <div class="product">
+        		<div id="product" class="anker"></div>
+        		<div class="product-bg"></div>
+						<div class="product-devices-wrapper home d-md-flex">
+					  	<div class="master-container devices">
+					    	<div class="product-devices-heading devices">
+					      	<h2 class="text-white">Klara’s end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
+					    	</div>
+					  	</div>
+						  <div class="porduct-devices-image-wrapper">
+						  	<img src="assets/images/product.png" class="product-img">
+						  </div>
+						</div>
+					</div>
+
         </div>
 
         <div class="webinar-series home" id="product">

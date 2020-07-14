@@ -41,6 +41,15 @@
   /* iOS 4.1- */
 }
 
+html {
+  scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Sofia Pro, sans-serif;
   color: #3c2d2d;

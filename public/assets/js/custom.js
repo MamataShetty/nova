@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+	 $('.product-bg').each(function() {
+    var off = $(this).offset().top
+    $(this).data('orig-offset', off);
+  });
+
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
       $('#navbar').addClass('navbar-nova');
@@ -8,6 +14,18 @@ $(document).ready(function () {
     if (window.innerWidth > 767) {
       var scroll = $(window).scrollTop();
 
+      //js for clinic page background 
+      $('.product-bg').each(function(){
+      var off = $(this).data('orig-offset');
+     
+      if (scroll >= off) {
+        var translate =  (scroll - off) / $(window).height() * 100;
+        console.log(translate);
+        $(this).css({transform: 'translateY(' + -translate +'%)'});
+      }
+     });
+
+      // js for hoem page
       if ((scroll > 40) && (scroll < 800)) {
         $(".td-stage-wrapper").removeClass("scrollhide")
         $('.telemedecine-stage-content').addClass('hide-text');
