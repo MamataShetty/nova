@@ -26,6 +26,14 @@
         "source": "/clinics",
         "destination": "/clinics.html",
         "type": 301
+      },{
+        "source": "/patient-signup",
+        "destination": "/patient-signup.html",
+        "type": 301
+      },{
+        "source": "/pricing",
+        "destination": "/pricing.html",
+        "type": 301
       }
     ]
   }

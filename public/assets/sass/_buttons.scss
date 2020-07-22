@@ -1,8 +1,17 @@
 .btn {
-  padding: 8px 22px;
+  padding: 10px 22px;
   border-radius: 50px;
   font-size: 20px;
+  line-height: normal;
+  &:active:focus,&:focus {
+    box-shadow:none !important;
+    /*box-shadow:0 0 0 0.2rem rgba(98, 91, 225, 0.9) !important;*/
+  }
+  &.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: $primary;
+  }
 }
+
 
 .btn-primary {
   border-style: none;
@@ -10,22 +19,34 @@
   border-color: $primary;
   border-radius: 100px;
   background-color: $primary;
-  -webkit-transition: background-color 300ms cubic-bezier(.789, .159, .25, 1);
-  transition: background-color 300ms cubic-bezier(.789, .159, .25, 1);
   color: #fff;
   font-size: 20px;
   margin-right: 16px;
+  &.dropdown-toggle {
+    background-color: $primary
+  }
   @media (min-width: 767px) {
     margin-right: 24px;
   }
-  &:hover {
-    background: #625be1;
+  &:hover,&:focus,&:active {
+    background: $primary;
   }
 }
+.btn {
+  &.btn-outline-primary:not(:disabled):not(.disabled):active, 
+  &.btn-outline-primary:not(:disabled):not(.disabled).active {
+     background: $primary;
+  }
+}
+
 
 .btn-outline-primary {
   border: solid 2px $primary;
   color: $primary;
+  box-sizing: border-box;
+  &.btn {
+    padding: 8px 22px;
+  }
   &:hover,
   &:focus {
     background: $primary;

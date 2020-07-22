@@ -149,3 +149,76 @@ h5 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.bg-blue {
+  background-color: $primary;
+}
+.hero-blue {
+  
+  margin-top: 68px;
+  .master-container {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    margin-top: 68px;
+    .product-img {
+      position: absolute;
+      bottom: -90px;
+    }
+    .master-container {
+      height: 100vh;
+    }
+  }
+}
+
+.font-sm {
+  font-size: 18px;
+}
+.font-bold {
+  font-family: "Sofia Medium";
+}
+
+.hero-sub-pages {
+  margin-bottom: 100px;
+  @media (min-width: 768px) {
+    .master-container {
+      height: 100vh;
+    }
+  }
+  @media (min-width: 991px) {
+    .banner-image-section{
+      position: absolute;
+      width: 60%;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.padding-xxl {
+  padding: 15px;
+  margin-left: auto;
+    margin-right: auto;
+  @media (min-width: 992px) {
+    padding: 40px;
+    
+  }
+   @media (min-width: 1120px) {
+    padding: 0 100px;
+   }
+}
+.section-divider {
+  margin: 35px 0;
+  border-top: 1px solid #000000;
+  opacity: .1;
+}
+
+.patient-signup {
+  .product .master-container{
+    padding: 100px 0;
+    margin: 0;
+  }
+  input {
+    min-width: 304px;
+    height: 44px;
+  }
+}

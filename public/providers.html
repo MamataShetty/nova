@@ -16,254 +16,375 @@
       <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
       <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
       <script defer src="/__/firebase/init.js"></script>
-
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="message">
       <div class="wrapper nova-holder assistant-holder">
         <div class="nova-holder">
           <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-          	<div class="container-fluid">
-	            <a class="navbar-brand" href="/">
-	            	<img src="assets/images/logo_nova.svg" />
-	            </a>
-	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	            <span class="navbar-toggler-icon"></span>
-	            </button>
-	            <div class="collapse navbar-collapse" id="navbarNav">
-	            	<div class="d-flex justify-content-between d-lg-none">
-		            	<a class="navbar-brand text-white" href="/">
-		            		<img src="assets/images/logo_nova_white.svg" />
-		            	</a>
-			            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			            	<span class="navbar-toggler-icon"></span>
-			            </button>
-			           </div>
-
-	              <ul class="navbar-nav navbar-nav ml-lg-auto">
-	                <li class="nav-item active">
-	                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="/patients"> For Patients</a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="/providers">For Providers</a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="/clinics">For Clinics</a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="#">Pricing</a>
-	                </li>
-	                <li class="nav-item d-none d-lg-block">
-	                  <a class="nav-link btn btn-outline-primary px-4" href="#">Sign In</a>
-	                </li>
-	                <li class="nav-item d-block d-lg-none">
-	                  <a class="nav-link btn btn-outline-white d-inline-block px-4" href="#">Sign In</a>
-	                </li>
-	                <!-- <li class="nav-item">
-	                  <a class="nav-link" href="#">Sign up for free</a>
-	                </li> -->
-	              </ul>
-	            </div>
-	           </div>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">
+              <img src="assets/images/logo_nova.svg" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex justify-content-between d-lg-none">
+                  <a class="navbar-brand text-white" href="/">
+                  <img src="assets/images/logo_nova_white.svg" />
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <ul class="navbar-nav navbar-nav ml-lg-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/patients"> Patients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/providers">Providers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/clinics">Clinics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link btn btn-outline-primary px-4" href="#">Sign In</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link btn btn-outline-white d-inline-block px-4" href="#">Sign In</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up for free</a>
+                    </li> -->
+                </ul>
+              </div>
+            </div>
           </nav>
         </div>
+        <div class="product">
+          <!-- <div id="product" class="anker"></div> -->
+          <!-- <div class="product-bg"></div> -->
+          <div class="product-devices-wrapper home d-md-flex">
+            <div class="master-container devices">
+              <div class="product-devices-heading devices">
+                <h2>Nova's end-to-end virtual care platform helps practices stay connected with their patients.<br></h2>
+                 <a href="/pricing" class="btn btn-primary mb-4">Get Started - For Free</a>
+              </div>
+            </div>
+            <div class="porduct-devices-image-wrapper">
+              <img src="assets/images/product_group.png" class="product-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="telemedicine" class="my-5">
+        <div class="padding-xxl align-items-center">
+        	<div class="patients-texting">
+            <div class="pt-img-wrapper text-center">
+              <img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/Patient_Welcome.png" alt="">
+            </div>
+            <div class="patients-texting-content">
+              <h2 class="h-telemedicine">Give patients easy access to your practice</h2>
+              <p class="p-patients-texting">We’ve made telemedicine simple and easy for you. Create your personal room and start practicing telemedicine today. </p>
+            </div>
+          </div>
 
-				<div id="telemedicine" class="telemedicine">
-				  <div class="master-container">
-				    <div class="multichannel-telemedicine-wrapper pt-5 home">
-				      <div class="multichannel-telemedicine-content ">
-				      	<div class="assistant-skills-overline">
-				      		<h5>Welcome &amp; insurance collection</h5>
-				      	</div>
-				        <h2 class="h-telemedicine">Get a head start on eligibility</h2>
-				        <p class="p-patients-texting">Klara Assistant prompts patients to conveniently take a picture of their insurance card before their appointment. That means your team can kick off the verification process well before the patient sets foot in the office.</p>
-				      </div>
-				      <div class="multichannel-telemedicine-img-wrapper">
-				      	<img src="assets/images/providers/Welcome_Insurance-Collection_SMS.gif" alt="" class="_2-phones-1 show-on-scroll view-bottom">
-				      	<img src="assets/images/providers/Welcome_Insurance-Collection_Conversation.gif" alt="" class="_2-phones-2 show-on-scroll view-bottom">
-				      </div>
-				    </div>
+          <div class="multichannel-telemedicine-wrapper pt-5 home">
+            <div class="multichannel-telemedicine-content ">
+              <div class="assistant-skills-overline">
+              </div>
+              <h2 class="h-telemedicine">Invite a patient for their visit to your Nova URL
+              </h2>
+              <p class="p-patients-texting">For a patient to enter your waiting room ahead of a call, they simply need to enter your personalized URL into their Web browser. You can share a link to your waiting room in many different ways, including several useful ways right from your dashboard. You can invite via calendar, SMS, email or by website badge/</p>
+            </div>
+            <div class="multichannel-telemedicine-img-wrapper">
+              <img src="assets/images/providers/invite.png" alt="" class=" show-on-scroll view-bottom">
+            </div>
+          </div>
+          <div class="patients-texting">
+            <div class="pt-img-wrapper text-center">
+              <img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/easyaccess.png" alt="" width="300px;">
+            </div>
+            <div class="patients-texting-content">
+              <h2 class="h-telemedicine">Waiting room personalization</h2>
+              <p class="p-patients-texting">After your patient checks in to your room, they will be placed in your waiting room that can be personalized. In the waiting room, patients can view text and images, watch videos, send and receive a chat message. </p>
+            </div>
+          </div>
+          <div class="multichannel-telemedicine-wrapper pt-5 home">
+            <div class="multichannel-telemedicine-content ">
+              <div class="assistant-skills-overline">
+              </div>
+              <h2 class="h-telemedicine">Patients enter a queue</h2>
+              <p class="p-patients-texting">We designed the Patient Queue to give you more information on anyone in your waiting room that you might like to know before starting a call, such as: 
+                how long they have been waiting, 
+                their location,
+                the strength of their wifi connection,
+                which browser they're using,
+                if they've given the browser access to their devices camera/microphone,
+                What type of device and Operating System they're using.
+              </p>
+            </div>
+            <div class="multichannel-telemedicine-img-wrapper">
+              <img src="assets/images/providers/patient-queue.png" alt="" class=" show-on-scroll view-bottom">
+            </div>
+          </div>
+          <div class="patients-texting">
+            <div class="pt-img-wrapper text-center">
+              <img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/groupcalliphone.png" alt="" width="300px;">
+            </div>
+            <div class="patients-texting-content">
+              <h2 class="h-telemedicine">Bring multiple parties to the video conversation</h2>
+              <p class="p-patients-texting">You can hold sessions with up to five participants in different locations. This is a great feature to have if you have a couple in different locations or need another specialist on the call.</p>
+            </div>
+          </div>
+          <div class="multichannel-telemedicine-wrapper pt-5 home">
+            <div class="multichannel-telemedicine-content ">
+              <div class="assistant-skills-overline">
+              </div>
+              <h2 class="h-telemedicine">Share your screen with your patient</h2>
+              <p class="p-patients-texting">Screenshare is an easy way to show your patient a website, test results, xray, or a document from your computer.  Only microphone audio can be streamed during screenshare.</p>
+            </div>
+            <div class="multichannel-telemedicine-img-wrapper justify-content-center">
+              <img src="assets/images/providers/groupcall.png"  alt="" class="show-on-scroll view-bottom">
+            </div>
+          </div>
+          <div class="patients-texting">
+            <div class="pt-img-wrapper text-center">
+              <img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/picture.png" alt="" >
+            </div>
+            <div class="patients-texting-content">
+              <h2 class="h-telemedicine">Take a picture of your patient</h2>
+              <p class="p-patients-texting">Photo capture is a simple and easy way to document a symptom, record ID or insurance card information, or record evidence of your appointment for insurance.</p>
+            </div>
+          </div>
+          <div class="multichannel-telemedicine-wrapper pt-5 home">
+            <div class="multichannel-telemedicine-content ">
+              <div class="assistant-skills-overline">
+              </div>
+              <h2 class="h-telemedicine">Send/Receive files from/to your patient</h2>
+              <p class="p-patients-texting">File transfer is a HIPAA compliant way to send files between you and your patient. This is a better alternative to emails as the data you send might contain PHI. </p>
+            </div>
+            <div class="multichannel-telemedicine-img-wrapper justify-content-center">
+              <img src="assets/images/providers/filetransfer.png" alt="" class="show-on-scroll view-bottom">
+            </div>
+          </div>
+          <div class="patients-texting">
+            <div class="pt-img-wrapper text-center">
+              <img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/payments.png" alt="">
+            </div>
+            <div class="patients-texting-content">
+              <h2 class="h-telemedicine">Collect payments from patients</h2>
+              <p class="p-patients-texting">The payments feature lets you accept credit card payments while on a call or from the waiting room. Once you link up your Stripe account (or equivalent in different countires), session payments and copays become way easier.</p>
+            </div>
+          </div>
+          <div class="multichannel-telemedicine-wrapper pt-5 home">
+            <div class="multichannel-telemedicine-content ">
+              <div class="assistant-skills-overline">
+              </div>
+              <h2 class="h-telemedicine">Record the video call with you patient
+              </h2>
+              <p class="p-patients-texting">Entire telemedicine video consultation can be recorded and stored record purpose. These recorded files comply to HIPAA, PHI compliance and stored securely.</p>
+            </div>
+            <div class="multichannel-telemedicine-img-wrapper justify-content-center">
+              <img src="assets/images/providers/Record_Screen.png"  alt="" class="show-on-scroll view-bottom">
+            </div>
+          </div>
+          <div class="patients-texting">
+            <div class="pt-img-wrapper text-center">
+              <img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/message.png" alt="" >
+            </div>
+            <div class="patients-texting-content">
+              <h2 class="h-telemedicine">Chat with patients in the waiting room</h2>
+              <p class="p-patients-texting">Sometimes the patients have to wait in the waiting room for some periods of time. Doctor can send quick chat messages to the patients or send some reading materials/videos so the patient is bit engaged.</p>
+            </div>
+          </div>
+          <div class="multichannel-telemedicine-wrapper pt-5 home">
+            <div class="multichannel-telemedicine-content ">
+              <div class="assistant-skills-overline">
+              </div>
+              <h2 class="h-telemedicine">Get digital signatures with teleconsent
+              </h2>
+              <p class="p-patients-texting">With teleconsent, doctors can get signatures for your documents from patients before the telemedicine call. Doctors can pick the right teleconsent templates from the repository. </p>
+            </div>
+            <div class="multichannel-telemedicine-img-wrapper justify-content-center">
+              <img src="assets/images/providers/Teleconsent_screen.png" alt="" class="show-on-scroll view-bottom">
+            </div>
+          </div>
+        </div>
+        <div class="quote-1-person">
+          <div class="master-container">
+            <div class="d-flex justify-content-center">
+              <div class="media d-none d-md-flex show-on-scroll view-media">
+                <img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5eab2d26d785d803c2a4c0d8_1936571.jpg" class="rounded-circle" width="120px" alt="">
+                <div class="media-body ml-4">
+                  <div class="b2-quote-1-person">Ryan Buffington,</div>
+                  <div class="b2-quote-1-person titel">Buffington Family Medicine </div>
+                  <p >Saving 2-3 hours for three nurses each day is the equivalent of half of a full time employee’s time that we’re getting back each week. It’s been a dramatic difference.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-5">
+          <div class="master-container">
+            <div class="row">
+              <div class="col-md-12 text-center mb-5">
+                <h2>Many skills, one conversation</h2>
+                <p class="b">From automated appointment reminders to voicemail transcriptions, all patient communication is unified in a single thread, where your team can pick up on the human side of the conversation.</p>
+              </div>
+              <div class="col-12">
+                <img src="assets/images/providers/doc-patient.png " alt="" class="show-on-scroll view-bottom">
+                <img src="assets/images/providers/doc-patient-mobile.png" alt="" class="image-36 show-on-scroll view-bottom">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="Stats" class="stats">
+        <div class="master-container">
+        	<div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+              <img src="assets/images/illustrations/Video/video1.svg" class="mb-5" height="180px" 
+              />
 
-				    <div class="patients-texting">
-				      <div class="pt-img-wrapper text-center">
-				      	<img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/Appointment-Reminders_SMS-3.gif" alt="" width="300px;">
-				      </div>
-				      <div class="patients-texting-content">
-				      	<h5>Appointment reminders</h5>
-				        <h2 class="h-telemedicine">Reduce no-shows and late cancellations</h2>
-				        <p class="p-patients-texting">Klara Assistant reminds patients about their upcoming appointments with customizable messages that communicate relevant details in a personal tone. Patient information automatically syncs on an hourly basis to ensure the right message goes to the right patient at the right time.</p>
-				      </div>
-				    </div>
+              <p class="font-sm mb-5 mb-md-0">Nova features high quality HD video and audio to ensure you and your patient have the best experience possible.</p>
+            </div>
 
-				    <div class="multichannel-telemedicine-wrapper pt-5 home">
-				      <div class="multichannel-telemedicine-content ">
-				      	<div class="assistant-skills-overline">
-				      		<h5>Instructions</h5>
-				      	</div>
-				        <h2 class="h-telemedicine">Make every visit a success by helping patients prepare</h2>
-				        <p class="p-patients-texting">Patients are busy and won’t always remember what they’re supposed to do before an upcoming procedure or visit. Klara Assistant sends timely texts letting patients know what to expect and how to prepare, including attachments and links that help get your message across.</p>
-				      </div>
-				      <div class="multichannel-telemedicine-img-wrapper">
-				      	<img src="assets/images/providers/Welcome_Insurance-Collection_SMS.gif" alt="" class="_2-phones-1 show-on-scroll view-bottom">
-				      	<img src="assets/images/providers/Welcome_Insurance-Collection_Conversation.gif" alt="" class="_2-phones-2 show-on-scroll view-bottom">
-				      </div>
-				    </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+              <img src="assets/images/illustrations/No Download/nodownload1.svg" class="mb-5" height="180px" 
+              />
+
+              <h4 class="font-bold">No downloads</h4>
+              <p class="font-sm mb-5 mb-md-0">That’s right – no downloads, no plugins, nothing to install. Nova automatically works in most popular browsers.”</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+              <img src="assets/images/illustrations/easy/easy2.svg" class="mb-5" height="180px" 
+              />
+
+              <h4 class="font-bold">Easiest to use</h4>
+              <p class="font-sm mb-5 mb-md-0">A recent Clemson University research study found Novato be the easiest telemedicine solution.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+              <img src="assets/images/illustrations/Shareroom/wr1.svg" class="mb-5" height="180px" 
+              />
+
+              <p class="font-sm mb-5 mb-md-0">Personalize your waiting room with text, pictures, and videos for your patients to enjoy while waiting for you.”</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 text-center my-3">
+              <img src="assets/images/illustrations/History/history2.svg" class="mb-5" height="160px" 
+              />
+
+              <p class="font-sm mb-5 mb-md-0">With Meeting History, Nova will automatically keep track of the date, time, and duration of every session so you don’t have to.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+              <img src="assets/images/illustrations/mobile friendly/mf1.svg" class="mb-5" height="180px" 
+              />
+
+              <p class="font-sm mb-5 mb-md-0">See patients from almost anywhere in the world using your mobile browser.”</p>
+            </div>
 
 
-				    <div class="patients-texting">
-				      <div class="pt-img-wrapper text-center">
-				      	<img class="img-fluid show-on-scroll view-bottom" src="assets/images/providers/Appointment-Reminders_SMS-3.gif" alt="" width="300px;">
-				      </div>
-				      <div class="patients-texting-content">
-				      	<h5>No-show engagement</h5>
-				        <h2 class="h-telemedicine">Get patients back on the calendar without the back-and-forth</h2>
-				        <p class="p-patients-texting">Klara Assistant prevents patients from falling through the cracks by sending no-shows a message with a request to book a new appointment right from their phones (no login or password required). Integration with your EHR provides the patient with real-time information on your practice's availability.</p>
-				      </div>
-				    </div>
-
-				    <div class="multichannel-telemedicine-wrapper pt-5 home">
-				      <div class="multichannel-telemedicine-content ">
-				      	<div class="assistant-skills-overline">
-				      		<h5>Feedback & reviews</h5>
-				      	</div>
-				        <h2 class="h-telemedicine">Show patients why your practice is the right choice</h2>
-				        <p class="p-patients-texting">The best way to strengthen your reputation to stand out among the competition? Listen to your patients. Klara Assistant messages patients after their appointments with a quick satisfaction survey so you can get in front of any issues right away. Customize responses by score and drive patients to write online reviews.</p>
-				      </div>
-				      <div class="multichannel-telemedicine-img-wrapper justify-content-center">
-				      	<img src="assets/images/providers/Welcome_Insurance-Collection_SMS.gif" width="300px" alt="" class="show-on-scroll view-bottom">
-				      </div>
-				    </div>
-				  </div>
-
-			    <div class="quote-1-person">
-			    	<div class="master-container">
-			    		<div class="d-flex justify-content-center">
-			    			<div class="media d-none d-md-flex show-on-scroll view-media">
-			    				<img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5eab2d26d785d803c2a4c0d8_1936571.jpg" class="rounded-circle" width="120px" alt="">
-			    				<div class="media-body ml-4">
-			    					<div class="b2-quote-1-person">Ryan Buffington,</div>
-			    					<div class="b2-quote-1-person titel">Buffington Family Medicine </div>
-			    					<p >Saving 2-3 hours for three nurses each day is the equivalent of half of a full time employee’s time that we’re getting back each week. It’s been a dramatic difference.</p>
-			    				</div>
-			    			</div>
-			    		</div>
-			    	</div>
-			    </div>
-
-			    <div class="bg-white py-5">
-			    	<div class="master-container">
-				    	<div class="row">
-				    		<div class="col-md-6 mb-5">
-				    			<h1>Many skills, one conversation</h1>
-				    			<p class="b">From automated appointment reminders to voicemail transcriptions, all patient communication is unified in a single thread, where your team can pick up on the human side of the conversation.</p>
-				    		</div>
-				    		<div class="col-12">
-				    			<img src="assets/images/providers/Scheduling-Request.gif " alt="" class="show-on-scroll view-bottom">
-				    			<img src="assets/images/providers/Scheduling-Request.png" alt="" class="image-36 show-on-scroll view-bottom">
-				    		</div>
-			    		</div>
-			    	</div>
-			    </div>
-
-				</div> 
-
-				<section class="ehr-integration">
-					<div class="master-container">
-						<div class="product-wrapper">
-							<div class="feature-content">
-								<h2 class="text-white ehr-heading">Seamlessly integrated with your EHR</h2>
-								<ul role="list" class="list white h4">
-									<li>Automated patient sync</li>
-									<li>File and message write-back to EHR</li>
-									<li>Powerful appointment reminders </li>
-								</ul>
-							</div>
-							<div class="nextech-animation-wrapper">
-								<div class="klara-ehr-animation">
-									<img src="assets/images/patient-sync.svg" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<div id="Demo" class="demo-600-rose _80p">
-					<div class="master-container">
-						<div class="demo-wrapper">
-							<div class="feature-content">
-								<h2 class="feature-content-heading demo">It’s easy to get started. Get a live demo now!</h2>
-								<p class="b demo">Your practice can be up and running in a matter of days. <br></p><a href="" class="btn btn-primary w-button">Free Demo</a>
-							</div>
-							<div class="demo-illustration-wrapper">
-								<div class="l-dem-illustration">
-									<img src="https://assets.website-files.com/5dbafac3285ec25ba456f473/5dd20d4ab88d00bb654f79a7_book_demo_01.svg" alt="" class="demo_img_01">
-									<img src="assets/images/book-demo2.svg" alt="" class="demo_img_02">
-									<img src="assets/images/book-demo3.svg" alt="" class="demo_img_03" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer">
-				  <div class="master-container">
-						<div class="footer-container">
-							<div class="row">
-								<div class="col-lg-4 mb-4 mb-lg-0">
-									<h4 class="text-white mb-5">Learn About Nova Health</h4>
-								  <div class="footer-link-list-wrapper">
-										<a href="/" class="footer-link">Home</a>
-										<a href="/patients" class="footer-link">For Patients</a>
-										<a href="/providers" class="footer-link">For Providers</a>
-										<a href="/clinics" class="footer-link">For Clinics</a>
-										<a href="/pricings" class="footer-link">Pricing</a>
-								  </div>
-								</div>
-								<div class="col-lg-4 mb-4 mb-lg-0">
-									<h4 class="text-white mb-5">Using Nova Health</h4>
-								  <div class="footer-link-list-wrapper">
-										<a href="/" class="footer-link">Community Forum</a>
-										<a href="/patients" class="footer-link">Privacy Policy</a>
-										<a href="/providers" class="footer-link">Terms of Service</a>
-										<a href="/clinics" class="footer-link">Status</a>
-										<a href="/pricings" class="footer-link">Help Center</a>
-								  </div>
-								</div>
-								<div class="col-lg-4 mb-4 mb-lg-0">
-								  <div class="footer-icons-wrapper d-inline-flex  justify-content-between">
-										<a href="#" target="_blank" class="icon-button footer">
-											<img src="assets/images/facebook.svg" />
-										</a>
-										<a href="#" target="_blank" class="icon-button footer">
-											<img src="assets/images/twitter.svg" />
-										</a>
-										<a href="#" target="_blank" class="icon-button footer">
-											<img src="assets/images/linkedin.svg" style="height: 50px" />
-										</a>
-								  </div>
-								  <div class="text-white">
-								  	<p>Our mission is to make telemedicine available to everyone,so we designed Nova Health to be simple and free for all to use.</p>
-										<p>Support:(844) 436-9963</p>
-										<p>© 2020 Nova Health.</p>
-								  </div>
-								</div>
-							 </div>
-						</div>
-				  </div>
-				</div>
+          </div>
+        </div>
+      </section>
+      <section class="ehr-integration">
+        <div class="master-container">
+          <div class="product-wrapper">
+            <div class="feature-content">
+              <h2 class="text-white ehr-heading">Seamlessly integrated with your EHR</h2>
+              <ul role="list" class="list white h4">
+                <li>Automated patient sync</li>
+                <li>File and message write-back to EHR</li>
+                <li>Powerful appointment reminders </li>
+              </ul>
+            </div>
+            <div class="nextech-animation-wrapper">
+              <div class="klara-ehr-animation">
+                <img src="assets/images/patient-sync.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="Demo" class="demo-600-rose _80p">
+        <div class="master-container">
+          <div class="demo-wrapper">
+            <div class="feature-content">
+              <h2 class="feature-content-heading demo">We’re on a mission to change telemedicine. Simple, accessible & free of charge</h2>
+              <p class="b demo">Your practice can be up and running in a matter of minutes. <br></p>
+              <a href="" class="btn btn-primary w-button">Get Started - For Free</a>
+            </div>
+            <div class="demo-illustration-wrapper">
+              <div class="l-dem-illustration">
+              	<img src="assets/images/book-demo.svg" alt="" class="demo_img_01">
+		            <img src="assets/images/book-demo2.svg" alt="" class="demo_img_02">
+		            <img src="assets/images/book-demo3.svg" alt="" class="demo_img_03" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="master-container">
+          <div class="footer-container">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <h4 class="text-white mb-5">Learn About Nova Health</h4>
+                <div class="footer-link-list-wrapper">
+                  <a href="/" class="footer-link">Home</a>
+                  <a href="/patients" class="footer-link">Patients</a>
+                  <a href="/providers" class="footer-link">Providers</a>
+                  <a href="/clinics" class="footer-link">Clinics</a>
+                  <a href="/pricing" class="footer-link">Pricing</a>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <h4 class="text-white mb-5">Using Nova Health</h4>
+                <div class="footer-link-list-wrapper">
+                  <a href="/" class="footer-link">Community Forum</a>
+                  <a href="/patients" class="footer-link">Privacy Policy</a>
+                  <a href="/providers" class="footer-link">Terms of Service</a>
+                  <a href="/clinics" class="footer-link">Status</a>
+                  <a href="/pricing" class="footer-link">Help Center</a>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="footer-icons-wrapper d-inline-flex  justify-content-between">
+                  <a href="#" target="_blank" class="icon-button footer">
+                  <img src="assets/images/facebook.svg" />
+                  </a>
+                  <a href="#" target="_blank" class="icon-button footer">
+                  <img src="assets/images/twitter.svg" />
+                  </a>
+                  <a href="#" target="_blank" class="icon-button footer">
+                  <img src="assets/images/linkedin.svg" style="height: 50px" />
+                  </a>
+                </div>
+                <div class="text-white">
+                  <p>Our mission is to make telemedicine available to everyone,so we designed Nova Health to be simple and free for all to use.</p>
+                  <p>Support:(844) 436-9963</p>
+                  <p>© 2020 Nova Health.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
     <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
-
-		<script type="text/javascript" src="assets/js/scroll-animation.js"></script>
-		<script type="text/javascript" src="assets/js/custom.js"></script>
-
+    <script type="text/javascript" src="assets/js/scroll-animation.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
       	try {
