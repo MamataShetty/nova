@@ -1290,17 +1290,6 @@
   height: 424px;
   margin-left: -45px;
 }
-@media (max-width: 767px) {
-  .nextech-animation-wrapper {
-    height: 320px;
-    margin-top: 0px;
-    margin-bottom: 24px;
-    margin-left: 0%;
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-    -ms-flex-order: -1;
-  }
-}
 @media (max-width: 991px) {
   .nextech-animation-wrapper {
     display: flex;
@@ -1311,6 +1300,17 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .nextech-animation-wrapper {
+    height: 220px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    margin-left: 0%;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
   }
 }
 
@@ -2249,6 +2249,226 @@ img {
   transform: translateX(0);
 }
 
+.pricing .btn-outline-white:hover, .pricing .btn-outline-white:focus, .pricing .btn-outline-white:active {
+  background-color: #fff;
+  color: #3c32aa;
+}
+.pricing .product {
+  height: 100%;
+}
+
+.pricing__card .btn-outline-white:hover {
+  border-color: transparent;
+}
+.pricing__card .counter {
+  border-radius: 6px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.pricing__card .counter input::-webkit-outer-spin-button,
+.pricing__card .counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pricing__card .counter input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.pricing__card .counter,
+.pricing__card .counter .minus:hover,
+.pricing__card .counter .plus:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pricing__card .counter .minus,
+.pricing__card .counter .plus {
+  width: 27px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pricing__card .counter .minus::after,
+.pricing__card .counter .minus::before {
+  right: 6px;
+}
+
+.pricing__card .counter .minus::after,
+.pricing__card .counter .minus::before,
+.pricing__card .counter .plus::after,
+.pricing__card .counter .plus::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 11px;
+  background-color: #fff;
+  top: 11px;
+}
+
+.pricing__card .counter .plus::after {
+  transform: rotate(90deg);
+}
+
+.pricing__card .counter .plus::after,
+.pricing__card .counter .plus::before {
+  right: auto;
+  left: 6px;
+}
+
+.pricing__card .counter .count {
+  font-size: 17px;
+  position: relative;
+  font-weight: 500;
+  min-width: 20px;
+  line-height: 25px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  max-height: 100%;
+  padding: 0;
+  width: 27px;
+  min-height: unset;
+  color: #ffffff;
+}
+
+.pricing__card input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.custom-tabs ul.nav-pills li {
+  border: solid 1px #ddd;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  /* &:not(:first-child),&:not(:last-child) {
+   	.nav-link {
+    	border-radius: 0;
+   	}
+   }*/
+}
+.custom-tabs ul.nav-pills li .nav-link {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #f5f5f5;
+  padding: 5px 20px;
+  /*font-family: "Sofia Medium";*/
+}
+.custom-tabs ul.nav-pills li .nav-link.active {
+  color: #000;
+  background: #fff;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  border-radius: 0;
+}
+.custom-tabs ul.nav-pills li .nav-link span {
+  color: #3c32aa;
+  font-size: 0.8rem;
+  font-family: "SofiaPro-Bold";
+}
+.custom-tabs ul.nav-pills li:first-child, .custom-tabs ul.nav-pills li:first-child.active {
+  border-radius: 4px 0 0 4px;
+  border-left: solid 1px #ddd;
+}
+.custom-tabs ul.nav-pills li:last-child {
+  border-radius: 0px 4px 4px 0px;
+  border-right: solid 1px #ddd;
+}
+.custom-tabs ul.nav-pills li:not(:first-child) {
+  /*margin-left: -1px;*/
+}
+
+.rate sup {
+  font-size: 1rem;
+}
+.rate span {
+  font-size: 20px;
+}
+
+.tcount {
+  font-style: normal;
+  width: auto;
+  border: none;
+  background: none;
+  display: inline-block;
+  color: #fff;
+}
+
+.features-tabs-list.pro ul li:before {
+  background-color: #3c32aa;
+}
+.features-tabs-list.clinic ul li:before {
+  background-color: #6c757d;
+}
+.features-tabs-list h4 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+}
+.features-tabs-list h4:before, .features-tabs-list h4:after {
+  content: "";
+  border-top: 1px solid #ddd;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+.features-tabs-list h4:after {
+  margin: 0 0 0 20px;
+}
+.features-tabs-list ul {
+  display: block;
+  font-size: 15px;
+  color: #000;
+  list-style-type: none;
+  padding-bottom: 0;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-left: 24%;
+}
+.features-tabs-list ul li {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 18px;
+}
+.features-tabs-list ul li:before {
+  content: "";
+  position: absolute;
+  background-color: #ddd;
+  width: 8px;
+  height: 8px;
+  left: -18px;
+  top: 9px;
+  border-radius: 50%;
+}
+.features-tabs-list ul li del {
+  opacity: 0.25;
+}
+.features-tabs-list ul li em {
+  margin-left: 10px;
+  font-size: 10px;
+  font-style: italic;
+}
+
 @font-face {
   font-family: "Sofia Pro";
   src: url("../fonts/sofiapro-light.eot");
@@ -2466,6 +2686,11 @@ h5 {
 .patient-signup input {
   min-width: 304px;
   height: 44px;
+}
+
+.pricing .product .master-container {
+  padding: 100px 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

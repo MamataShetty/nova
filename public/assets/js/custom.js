@@ -5,6 +5,25 @@ $(document).ready(function () {
     $(this).data('orig-offset', off);
   });
 
+    var buttonPlus  = $(".plus");
+    var buttonMinus = $(".minus");
+
+    buttonPlus.click(function() {
+      var $n = $(this).parent(".counter").find(".count")
+      var $tcount =  $(this).parent(".pricing__card ").find("#muliply-val")
+      // var $tcountVal = $tcount.text(val);
+      $n.val(Number($n.val())+1 );
+    });
+
+    buttonMinus.click(function() {
+      var $n = $(this).parent(".counter").find(".count")
+      var amount = Number($n.val());
+      if (amount > 0) {
+        $n.val(amount-1);
+      }
+    });
+
+
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
       $('#navbar').addClass('navbar-nova');
